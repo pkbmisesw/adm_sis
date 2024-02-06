@@ -29,8 +29,15 @@
           </div>
           <div class="menu-title">Users</div>
         </a>
-        <!-- </li>
+      </li>
       <li>
+        <a href="../m_guru">
+          <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+          </div>
+          <div class="menu-title">Guru</div>
+        </a>
+      </li>
+      <!-- <li>
         <a href="emailbox.html">
           <div class="parent-icon icon-color-2"><i class="bx bx-envelope"></i>
           </div>
@@ -80,7 +87,7 @@
           </div>
           <div class="menu-title">Widgets</div>
         </a>
-      </li> -->
+      </li>  -->
 
     </ul>
     <!--end navigation-->

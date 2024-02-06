@@ -38,32 +38,26 @@ $ketnama = "Silahkan mengisi nama";
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTambah">Tambah
               </button>
 
-
               <!-- /.box -->
 
-              <div class="box">
-                <div class="box-header">
-                  <h3 class="box-title">Master Data <?php echo $master; ?></h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>No</th>
-                        <th>Nik</th>
-                        <th>Nama</th>
-                        <th>Level_id</th>
-                        <th>Email</th>
-                        <th>Status_aktif</th>
-                        <th>Hp</th>
-                        <th>Ktp</th>
-                        <th>Aksi</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+              <div class="box-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Nik</th>
+                      <th>Nama</th>
+                      <th>Level_id</th>
+                      <th>Email</th>
+                      <th>Status_aktif</th>
+                      <th>Hp</th>
+                      <th>Ktp</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
 
-                      <?php
+                    <?php
                    $count = 1;
 				   
                    $sql = $conn->prepare("SELECT * FROM `m_user` ORDER BY id DESC");
@@ -71,261 +65,261 @@ $ketnama = "Silahkan mengisi nama";
                    while($data=$sql->fetch()) {
                 ?>
 
-                      <tr>
-                        <td><?php echo $count; ?></td>
-                        <td><?php echo $data['nik'];?></td>
-                        <td><?php echo $data['nama'];?></td>
-                        <td><?php echo $data['level_id'];?></td>
-                        <td><?php echo $data['email'];?></td>
-                        <td><?php echo $data['status_aktif'];?></td>
-                        <td><?php echo $data['hp'];?></td>
-                        <td><a href="../../images/<?php echo $data['ktp'];?>">Lihat</a></td>
-                        <td>
-                          <button data-id="<?= $data['id'] ?>" data-nik="<?= $data['nik']?>"
-                            data-nama="<?= $data['nama']?>" data-level_id="<?= $data['level_id']?>"
-                            data-email="<?= $data['email']?>" data-status_aktif="<?= $data['status_aktif']?>"
-                            data-hp="<?= $data['hp']?>" data-ktp="<?= $data['ktp']?>" type="button"
-                            class="btn btn-light btn_update" data-toggle="modal">✎</button>
-                          <a class="btn btn-light" onclick="return confirm('are you want deleting data')"
-                            href="../../controller/<?php echo $dba;?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>">❌</a>
-                        </td>
-                      </tr>
+                    <tr>
+                      <td><?php echo $count; ?></td>
+                      <td><?php echo $data['nik'];?></td>
+                      <td><?php echo $data['nama'];?></td>
+                      <td><?php echo $data['level_id'];?></td>
+                      <td><?php echo $data['email'];?></td>
+                      <td><?php echo $data['status_aktif'];?></td>
+                      <td><?php echo $data['hp'];?></td>
+                      <td><a href="../../images/<?php echo $data['ktp'];?>">Lihat</a></td>
+                      <td>
+                        <button data-id="<?= $data['id'] ?>" data-nik="<?= $data['nik']?>"
+                          data-nama="<?= $data['nama']?>" data-level_id="<?= $data['level_id']?>"
+                          data-email="<?= $data['email']?>" data-status_aktif="<?= $data['status_aktif']?>"
+                          data-hp="<?= $data['hp']?>" data-ktp="<?= $data['ktp']?>" type="button"
+                          class="btn btn-light btn_update" data-toggle="modal">✎</button>
+                        <a class="btn btn-light" onclick="return confirm('are you want deleting data')"
+                          href="../../controller/<?php echo $dba;?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>">❌</a>
+                      </td>
+                    </tr>
 
-                      <?php
-                $count=$count+1;
-                } 
-                ?>
+                    <?php
+                      $count=$count+1;
+                     } 
+                    ?>
 
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>No</th>
-                        <th>Nik</th>
-                        <th>Nama</th>
-                        <th>Level_id</th>
-                        <th>Email</th>
-                        <th>Status_aktif</th>
-                        <th>Hp</th>
-                        <th>Ktp</th>
-                        <th>Aksi</th>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <!-- /.box-body -->
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>No</th>
+                      <th>Nik</th>
+                      <th>Nama</th>
+                      <th>Level_id</th>
+                      <th>Email</th>
+                      <th>Status_aktif</th>
+                      <th>Hp</th>
+                      <th>Ktp</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </tfoot>
+                </table>
               </div>
-              <!-- /.box -->
+              <!-- /.box-body -->
             </div>
-            <!-- /.col -->
+            <!-- /.box -->
           </div>
-
-          <div class="col">
-
-            <!-- Modal Tambah -->
-            <div class="modal fade" id="modalTambah" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah <?php echo $master;?></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
-                      enctype="multipart/form-data">
-
-                      <div class="form-group">
-                        <label class="col-form-label">Nik :</label>
-                        <input type="text" class="form-control" id="myInput" name="nik" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Nama :</label>
-                        <input type="text" class="form-control" name="nama"
-                          placeholder="<?php echo $ketnama. " ".$master. " ..."; ?>" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Level_id :</label>
-                        <input type="text" class="form-control" name="level_id" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Email :</label>
-                        <input type="text" class="form-control" name="email" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Password :</label>
-                        <input type="password" class="form-control" name="password" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Status_aktif :</label>
-                        <input type="text" class="form-control" name="status_aktif" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Hp :</label>
-                        <input type="text" class="form-control" name="hp" />
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label">Ktp :</label>
-                        <input type="text" class="form-control" name="ktp" />
-                      </div>
-
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" name="upload" type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal Tambah -->
-          <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Tambah <?php echo $master;?></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
-                    enctype="multipart/form-data">
-
-                    <div class="form-group">
-                      <label class="col-form-label">Nik :</label>
-                      <input type="text" class="form-control" id="myInput" name="nik" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Nama :</label>
-                      <input type="text" class="form-control" name="nama"
-                        placeholder="<?php echo $ketnama. " ".$master. " ..."; ?>" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Level_id :</label>
-                      <input type="text" class="form-control" name="level_id" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Email :</label>
-                      <input type="text" class="form-control" name="email" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Password :</label>
-                      <input type="password" class="form-control" name="password" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Status_aktif :</label>
-                      <input type="text" class="form-control" name="status_aktif" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Hp :</label>
-                      <input type="text" class="form-control" name="hp" />
-                    </div>
-
-                    <div class="form-group">
-                      <label class="col-form-label">Ktp :</label>
-                      <input type="text" class="form-control" name="ktp" />
-                    </div>
-
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" name="upload" type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal Edit -->
+          <!-- /.col -->
       </div>
-      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+      <div class="col">
+
+        <!-- Modal Tambah -->
+        <div class="modal fade" id="modalTambah" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah <?php echo $master;?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
+                  enctype="multipart/form-data">
+
+                  <div class="form-group">
+                    <label class="col-form-label">Nik :</label>
+                    <input type="text" class="form-control" id="myInput" name="nik" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Nama :</label>
+                    <input type="text" class="form-control" name="nama"
+                      placeholder="<?php echo $ketnama. " ".$master. " ..."; ?>" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Level_id :</label>
+                    <input type="text" class="form-control" name="level_id" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Email :</label>
+                    <input type="text" class="form-control" name="email" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Password :</label>
+                    <input type="password" class="form-control" name="password" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Status_aktif :</label>
+                    <input type="text" class="form-control" name="status_aktif" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Hp :</label>
+                    <input type="text" class="form-control" name="hp" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-form-label">Ktp :</label>
+                    <input type="text" class="form-control" name="ktp" />
+                  </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" name="upload" type="button" class="btn btn-primary">Save changes</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Tambah -->
+      <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Edit </h5>
+              <h5 class="modal-title" id="exampleModalLabel">Tambah <?php echo $master;?></h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <form id="form-edit-transaksi-masuk">
+            <div class="modal-body">
+              <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
+                enctype="multipart/form-data">
 
-              <div class="modal-body">
                 <div class="form-group">
-                  <input type="hidden" id="id_edit" name="id" />
-
-                  <div class="form-group">
-                    <label class="control-label">Nik : </label>
-                    <input type="text" class="form-control" id="nik_edit" name="nik" />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Nama : </label>
-                    <input type="text" class="form-control" id="nama_edit" name="nama" />
-                  </div>
-
-
-
-                  <div class="form-group">
-                    <label class="control-label">Level_id : </label>
-                    <input type="text" class="form-control" id="level_id_edit" name="level_id" />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Email : </label>
-                    <input type="text" class="form-control" id="email_edit" name="email" />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Status_aktif : </label>
-                    <input type="text" class="form-control" id="status_aktif_edit" name="status_aktif" />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Hp : </label>
-                    <input type="text" class="form-control" id="hp_edit" name="hp" />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Ktp : </label>
-                    <input type="text" class="form-control" id="ktp_edit" name="ktp" />
-                  </div>
-
-
+                  <label class="col-form-label">Nik :</label>
+                  <input type="text" class="form-control" id="myInput" name="nik" />
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="btn-save-update">Save changes</button>
-              </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Nama :</label>
+                  <input type="text" class="form-control" name="nama"
+                    placeholder="<?php echo $ketnama. " ".$master. " ..."; ?>" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Level_id :</label>
+                  <input type="text" class="form-control" name="level_id" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Email :</label>
+                  <input type="text" class="form-control" name="email" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Password :</label>
+                  <input type="password" class="form-control" name="password" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Status_aktif :</label>
+                  <input type="text" class="form-control" name="status_aktif" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Hp :</label>
+                  <input type="text" class="form-control" name="hp" />
+                </div>
+
+                <div class="form-group">
+                  <label class="col-form-label">Ktp :</label>
+                  <input type="text" class="form-control" name="ktp" />
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" name="upload" type="button" class="btn btn-primary">Save changes</button>
+            </div>
             </form>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-      </section>
-      <!-- /.content -->
+
+      <!-- Modal Edit -->
     </div>
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="form-edit-transaksi-masuk">
+
+            <div class="modal-body">
+              <div class="form-group">
+                <input type="hidden" id="id_edit" name="id" />
+
+                <div class="form-group">
+                  <label class="control-label">Nik : </label>
+                  <input type="text" class="form-control" id="nik_edit" name="nik" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Nama : </label>
+                  <input type="text" class="form-control" id="nama_edit" name="nama" />
+                </div>
+
+
+
+                <div class="form-group">
+                  <label class="control-label">Level_id : </label>
+                  <input type="text" class="form-control" id="level_id_edit" name="level_id" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Email : </label>
+                  <input type="text" class="form-control" id="email_edit" name="email" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Status_aktif : </label>
+                  <input type="text" class="form-control" id="status_aktif_edit" name="status_aktif" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Hp : </label>
+                  <input type="text" class="form-control" id="hp_edit" name="hp" />
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Ktp : </label>
+                  <input type="text" class="form-control" id="ktp_edit" name="ktp" />
+                </div>
+
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="btn-save-update">Save changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    </section>
+    <!-- /.content -->
   </div>
 </div>
+
 
 
 
@@ -379,8 +373,8 @@ $(document).ready(function() {
 
 });
 </script>
-
-
+<!--Data Tables js-->
+<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
 
 <script>
 $(function() {
@@ -396,14 +390,6 @@ $(function() {
 })
 </script>
 
-<!-- Bootstrap JS -->
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
-
-<!--plugins-->
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/plugins/simplebar/js/simplebar.min.js"></script>
-<script src="../../assets/plugins/metismenu/js/metisMenu.min.js"></script>
-<script src="../../assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 <script>
 $('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
@@ -415,7 +401,15 @@ $('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
   modal.find('.modal-body input').val(recipient)
 });
 </script>
-<!-- App JS -->
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS
+hide temporary
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="../../assets/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="../../assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+-->
+
 <script src="../../assets/js/app.js"></script>
 </body>
 
