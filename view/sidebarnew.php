@@ -7,25 +7,29 @@
       <div>
         <h4 class="logo-text">Syndash</h4>
       </div>
-      <a href="javascript:;" class="toggle-btn ms-auto"> <i class="bx bx-menu"></i>
-      </a>
     </div>
     <!--navigation-->
     <ul class="metismenu" id="menu">
       <li>
-        <a href="javascript:;" class="has-arrow">
+        <a href="#"><i class="fa fa-circle text-success"></i> <?php echo $_SESSION['email']; ?></a><br>
+
+      </li>
+      <li>
+        <a href="../admin/">
           <div class="parent-icon icon-color-1"><i class="bx bx-home-alt"></i>
           </div>
           <div class="menu-title">Dashboard</div>
         </a>
-        <ul>
-          <li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
-          </li>
-          <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Sales</a>
-          </li>
-        </ul>
+
       </li>
-      <li class="menu-label">Web Apps</li>
+      <li class="menu-label">Master Data</li>
+      <li>
+        <a href="../m_user">
+          <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+          </div>
+          <div class="menu-title">Users</div>
+        </a>
+        <!-- </li>
       <li>
         <a href="emailbox.html">
           <div class="parent-icon icon-color-2"><i class="bx bx-envelope"></i>
@@ -47,13 +51,7 @@
           <div class="menu-title">File Manager</div>
         </a>
       </li>
-      <li>
-        <a href="contact-list.html">
-          <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
-          </div>
-          <div class="menu-title">Contatcs</div>
-        </a>
-      </li>
+
       <li>
         <a href="to-do.html">
           <div class="parent-icon icon-color-6"><i class="bx bx-task"></i>
@@ -82,7 +80,7 @@
           </div>
           <div class="menu-title">Widgets</div>
         </a>
-      </li>
+      </li> -->
 
     </ul>
     <!--end navigation-->
