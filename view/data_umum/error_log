@@ -1,0 +1,8 @@
+[17-Nov-2023 08:49:33 UTC] PHP Warning:  Undefined array key "kecamatan" in /home/tppkkbi2/public_html/view/data_umum/edit.php on line 6
+[17-Nov-2023 08:49:33 UTC] PHP Warning:  Undefined array key "kelurahan" in /home/tppkkbi2/public_html/view/data_umum/edit.php on line 7
+[17-Nov-2023 08:49:33 UTC] PHP Warning:  Undefined array key "ling" in /home/tppkkbi2/public_html/view/data_umum/edit.php on line 8
+[17-Nov-2023 08:49:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'kecamatan' in 'field list' in /home/tppkkbi2/public_html/view/data_umum/edit.php:30
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/data_umum/edit.php(30): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/data_umum/edit.php on line 30

@@ -1,0 +1,5 @@
+[11-Aug-2023 22:19:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'gender' in 'field list' in /home/tppkkbi2/public_html/view/m_siswa/edit.php:20
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/m_siswa/edit.php(20): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/m_siswa/edit.php on line 20

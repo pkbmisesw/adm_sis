@@ -1,0 +1,177 @@
+[18-Nov-2023 07:09:25 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:09:39 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:09:39 Asia/Makassar] PHP Warning:  Undefined array key "nama_ling" in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 350
+[18-Nov-2023 07:09:39 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/tppkkbi2/public_html/controller/datarekap_controller.php:360
+Stack trace:
+#0 /home/tppkkbi2/public_html/controller/datarekap_controller.php(360): PDOStatement->execute()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 360
+[18-Nov-2023 07:11:21 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/dataumum_controller.php on line 4
+[18-Nov-2023 07:11:30 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:11:47 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:12:45 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/dataumum_controller.php on line 4
+[18-Nov-2023 07:19:27 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:25:03 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:48:19 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 07:54:54 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 08:06:00 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:02:29 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:03:02 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:30:37 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:37:23 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:51:09 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:51:30 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:52:30 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:52:45 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:55:15 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 09:55:33 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 10:05:19 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 10:13:06 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[18-Nov-2023 10:16:52 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[22-Nov-2023 18:22:00 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[22-Nov-2023 18:23:16 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[22-Nov-2023 18:23:16 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[22-Nov-2023 18:23:55 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[22-Nov-2023 18:24:28 Asia/Makassar] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 15:48:50 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/datarekap_controller.php on line 4
+[23-Nov-2023 16:58:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:00:35 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:00:35 Asia/Makassar] PHP Warning:  unlink(../images/387744041_726784216152469_6958253199434037536_n.jpg): No such file or directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[23-Nov-2023 17:05:26 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:13:02 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:15:52 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:17:53 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:17:53 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[23-Nov-2023 17:18:02 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:18:20 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:18:36 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Nov-2023 17:54:09 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Nov-2023 07:02:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 08:56:58 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 09:04:08 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 09:04:08 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[27-Nov-2023 09:04:51 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:10:38 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:14:34 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:18:22 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:21:26 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:24:11 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:26:51 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:29:04 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:31:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:35:15 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:38:17 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:42:35 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:43:18 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:43:18 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[27-Nov-2023 16:44:51 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:48:21 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:49:28 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 16:49:28 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[27-Nov-2023 16:53:53 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 17:00:36 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[27-Nov-2023 17:03:17 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[28-Nov-2023 08:02:41 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[28-Nov-2023 08:03:21 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[28-Nov-2023 17:28:09 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 10:05:33 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 10:06:23 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 10:06:23 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[29-Nov-2023 10:06:39 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 11:09:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 11:13:24 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 11:17:20 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[29-Nov-2023 11:21:27 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 12:16:10 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 12:16:33 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 12:18:49 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 12:18:49 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 205
+[13-Dec-2023 13:09:38 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:11:07 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:11:07 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:12:56 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:13:44 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:13:44 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:14:54 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:15:32 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:15:32 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:17:27 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:17:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:17:59 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:19:34 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:20:06 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:20:06 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:21:00 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:21:13 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:22:00 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:22:00 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:23:33 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:25:10 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:25:10 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:26:47 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:29:05 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:29:05 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 13:59:29 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 13:59:29 Asia/Makassar] PHP Notice:  Undefined index: nama in /home/tppkkbi2/public_html/controller/post_controller.php on line 10
+[13-Dec-2023 14:02:01 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 14:02:01 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[13-Dec-2023 14:04:28 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 14:05:13 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[13-Dec-2023 14:05:13 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 11:53:08 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 11:57:31 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 11:57:31 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 11:58:09 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 11:59:24 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 11:59:24 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 12:00:45 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:01:52 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:01:52 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 12:02:26 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:02:58 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:05:10 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:05:10 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 12:08:06 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:12:22 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:12:22 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 12:13:54 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:14:09 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:14:09 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[04-Jan-2024 12:16:36 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[04-Jan-2024 12:18:05 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:08:43 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:29:57 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:30:45 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:30:45 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[23-Jan-2024 22:55:40 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:56:21 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[23-Jan-2024 22:56:21 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 04:45:44 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:46:22 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:46:22 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 04:52:35 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:53:01 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:53:01 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 04:53:39 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:54:38 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:55:00 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:55:00 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 04:56:04 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:56:16 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:56:16 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 04:56:33 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:57:06 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:57:36 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 04:57:36 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 05:05:22 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:06:05 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:06:05 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 05:06:38 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:08:04 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:08:04 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[24-Jan-2024 05:08:30 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:08:59 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/post_controller.php on line 6
+[24-Jan-2024 05:08:59 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/post_controller.php on line 125
+[25-Jan-2024 10:12:31 Asia/Makassar] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tppkkbi2/public_html/controller/user_controller.php on line 4
+[25-Jan-2024 10:12:31 Asia/Makassar] PHP Notice:  Undefined index: ktp in /home/tppkkbi2/public_html/controller/user_controller.php on line 158
+[25-Jan-2024 10:12:31 Asia/Makassar] PHP Warning:  unlink(../images/): Is a directory in /home/tppkkbi2/public_html/controller/user_controller.php on line 159

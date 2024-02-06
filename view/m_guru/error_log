@@ -1,0 +1,24 @@
+[12-Aug-2023 01:59:52 UTC] PHP Warning:  Undefined array key "p_golongan" in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 19
+[12-Aug-2023 01:59:52 UTC] PHP Warning:  Undefined array key "t_tambah" in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 21
+[12-Aug-2023 01:59:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 18 in /home/tppkkbi2/public_html/view/m_guru/edit.php:24
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/m_guru/edit.php(24): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 24
+[12-Aug-2023 02:00:31 UTC] PHP Warning:  Undefined array key "t_tambah" in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 21
+[12-Aug-2023 02:00:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 18 in /home/tppkkbi2/public_html/view/m_guru/edit.php:24
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/m_guru/edit.php(24): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 24
+[12-Aug-2023 02:01:09 UTC] PHP Warning:  Undefined array key "t_tambah" in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 21
+[12-Aug-2023 02:01:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 18 in /home/tppkkbi2/public_html/view/m_guru/edit.php:24
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/m_guru/edit.php(24): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 24
+[12-Aug-2023 02:09:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 18 in /home/tppkkbi2/public_html/view/m_guru/edit.php:24
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/m_guru/edit.php(24): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/m_guru/edit.php on line 24

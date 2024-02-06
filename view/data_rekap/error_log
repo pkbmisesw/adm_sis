@@ -1,0 +1,23 @@
+[17-Nov-2023 01:46:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'nama_ling' in 'field list' in /home/tppkkbi2/public_html/view/data_rekap/edit.php:52
+Stack trace:
+#0 /home/tppkkbi2/public_html/view/data_rekap/edit.php(52): mysqli->query()
+#1 {main}
+  thrown in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 52
+[17-Nov-2023 22:28:41 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 61
+[17-Nov-2023 22:28:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 61
+[18-Nov-2023 06:30:54 Asia/Makassar] PHP Warning:  Undefined variable $con in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 64
+[18-Nov-2023 06:30:54 Asia/Makassar] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/tppkkbi2/public_html/view/data_rekap/edit.php:64
+Stack trace:
+#0 {main}
+  thrown in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 64
+[17-Nov-2023 22:36:00 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 61
+[17-Nov-2023 22:36:00 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 61
+[17-Nov-2023 22:36:00 UTC] PHP Warning:  Undefined variable $mysqli in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 63
+[17-Nov-2023 22:36:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/tppkkbi2/public_html/view/data_rekap/edit.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 63
+[18-Nov-2023 07:53:28 Asia/Makassar] PHP Warning:  Undefined array key "j_wm_l" in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 66
+[18-Nov-2023 07:53:28 Asia/Makassar] PHP Warning:  Undefined array key "j_wm_p" in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 67
+[18-Nov-2023 08:11:40 Asia/Makassar] PHP Warning:  Undefined array key "j_wm_l" in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 66
+[18-Nov-2023 08:11:40 Asia/Makassar] PHP Warning:  Undefined array key "j_wm_p" in /home/tppkkbi2/public_html/view/data_rekap/edit.php on line 67
