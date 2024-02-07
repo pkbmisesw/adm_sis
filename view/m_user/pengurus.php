@@ -42,8 +42,7 @@ include '../sidebarNew.php';
           </div>
           <div class="ms-auto">
             <div class="btn-group">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah">
-                Tambah
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTambah">Tambah
               </button>
             </div>
           </div>
@@ -107,6 +106,8 @@ include '../sidebarNew.php';
                           <th>Nama</th>
                           <th>Jabatan</th>
                           <th>Hp</th>
+                          <th>Gambar</th>
+
                           <th>Aksi</th>
                         </tr>
                       </tfoot>
@@ -126,8 +127,8 @@ include '../sidebarNew.php';
       </div>
       <div class="col">
         <!-- Modal Tambah -->
-        <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+        <div class="modal fade" id="modalTambah" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Tambah <?php echo $master; ?></h5>
@@ -167,7 +168,7 @@ include '../sidebarNew.php';
         </div>
         <!-- Modal Edit -->
         <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Edit </h5>
@@ -221,10 +222,6 @@ include '../sidebarNew.php';
 
 
 
-
-
-
-
 <?php
 include '../footer.php';
 ?>
@@ -271,6 +268,8 @@ include '../footer.php';
   });
 </script>
 
+<!--Data Tables js-->
+<script src="../../assetsNew/plugins/datatable/js/jquery.dataTables.min.js"></script>
 
 
 <script>
@@ -287,7 +286,14 @@ include '../footer.php';
   })
 </script>
 
-
-</body>
-
-</html>
+<script>
+  $('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+  });
+</script>

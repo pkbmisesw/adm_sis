@@ -30,33 +30,33 @@ include '../sidebarnew.php';
     <div class="page-content-wrapper">
 
       <div class="page-content">
+        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+          <div class="breadcrumb-title pe-3">Home</div>
+          <div class="ps-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"> </i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Table <?php echo $master; ?></li>
+              </ol>
+            </nav>
+          </div>
+          <div class="ms-auto">
+            <div class="btn-group">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTambah">Tambah
+              </button>
 
+            </div>
+          </div>
+        </div>
         <!-- Main content -->
         <section class="content">
           <div class="row">
             <div class="col-xs-12">
               <div class="card radius-15">
                 <div class="card-body">
-                  <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                    <div class="breadcrumb-title pe-3">Home</div>
-                    <div class="ps-3">
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0 p-0">
-                          <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"> </i></a>
-                          </li>
-                          <li class="breadcrumb-item active" aria-current="page">Table <?php echo $master; ?></li>
-                        </ol>
-                      </nav>
-                    </div>
-                    <div class="ms-auto">
-                      <div class="btn-group">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTambah">Tambah
-                        </button>
 
-                      </div>
-                    </div>
-                  </div>
                   <div class="card-title">
                     <h3 class="">Master Data <?php echo $master; ?></h3>
                   </div>
@@ -199,7 +199,7 @@ include '../sidebarnew.php';
 
         <!-- Modal Edit -->
         <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Edit </h5>
