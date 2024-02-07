@@ -1,4 +1,4 @@
-<?php 
+<?php
 $sqla = "SELECT * FROM setting ORDER BY id DESC";
 $stmta = $conn->prepare($sqla);
 $stmta->execute();
@@ -16,24 +16,24 @@ $rowa = $stmta->fetch();
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="../../assets/css/pace.min.css" rel="stylesheet" />
-  <script src="../../assets/js/pace.min.js"></script>
+  <!-- <link href="../../assets/css/pace.min.css" rel="stylesheet" />
+  <script src="../../assets/js/pace.min.js"></script> -->
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto&display=swap" />
+  <link rel="stylesheet" href="../../assetsNew/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto&display=swap" />
   <!-- Icons CSS -->
-  <link rel="stylesheet" href="../../assets/css/icons.css" />
+  <link rel="stylesheet" href="../../assetsNew/css/icons.css" />
   <!-- App CSS -->
-  <link rel="stylesheet" href="../../assets/css/app.css" />
+  <!-- <link rel="stylesheet" href="../../assets/css//app.css" /> -->
+  <link rel="stylesheet" href="../../assetsNew/css/app.css" />
+
   <!-- Google Font -->
-  <link rel="stylesheet" href="../..assets/css/dark-sidebar.css" />
-  <link rel="stylesheet" href="../..assets/css/dark-theme.css" />
+  <link rel="stylesheet" href="../..assetsNew/css/dark-sidebar.css" />
+  <link rel="stylesheet" href="../..assetsNew/css/dark-theme.css" />
 
 
   <!-- Google Font -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
 <body>
@@ -48,8 +48,7 @@ $rowa = $stmta->fetch();
         </div>
         <div class="flex-grow-1 search-bar">
           <div class="input-group">
-            <button class="btn btn-search-back search-arrow-back" type="button"><i
-                class="bx bx-arrow-back"></i></button>
+            <button class="btn btn-search-back search-arrow-back" type="button"><i class="bx bx-arrow-back"></i></button>
             <input type="text" class="form-control" placeholder="search" />
             <button class="btn btn-search" type="button"><i class="lni lni-search-alt"></i></button>
           </div>
@@ -57,13 +56,11 @@ $rowa = $stmta->fetch();
         <div class="right-topbar ms-auto">
           <ul class="navbar-nav">
             <li class="nav-item search-btn-mobile">
-              <a class="nav-link position-relative" href="javascript:;"> <i
-                  class="bx bx-search vertical-align-middle"></i>
+              <a class="nav-link position-relative" href="javascript:;"> <i class="bx bx-search vertical-align-middle"></i>
               </a>
             </li>
             <li class="nav-item dropdown dropdown-lg">
-              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;"
-                data-bs-toggle="dropdown"> <span class="msg-count">6</span>
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;" data-bs-toggle="dropdown"> <span class="msg-count">6</span>
                 <i class="bx bx-comment-detail vertical-align-middle"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-end">
@@ -213,8 +210,7 @@ $rowa = $stmta->fetch();
               </div>
             </li>
             <li class="nav-item dropdown dropdown-lg">
-              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;"
-                data-bs-toggle="dropdown"> <i class="bx bx-bell vertical-align-middle"></i>
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="javascript:;" data-bs-toggle="dropdown"> <i class="bx bx-bell vertical-align-middle"></i>
                 <span class="msg-count">8</span>
               </a>
               <div class="dropdown-menu dropdown-menu-end">
@@ -344,10 +340,8 @@ $rowa = $stmta->fetch();
                 <a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
                 <a class="dropdown-item" href="javascript:;"><i class="bx bx-tachometer"></i><span>Dashboard</span></a>
                 <a class="dropdown-item" href="javascript:;"><i class="bx bx-wallet"></i><span>Earnings</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="bx bx-cloud-download"></i><span>Downloads</span></a>
-                <div class="dropdown-divider mb-0"></div> <a class="dropdown-item" href="javascript:;"><i
-                    class="bx bx-power-off"></i><span>Logout</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="bx bx-cloud-download"></i><span>Downloads</span></a>
+                <div class="dropdown-divider mb-0"></div> <a class="dropdown-item" href="javascript:;"><i class="bx bx-power-off"></i><span>Logout</span></a>
               </div>
             </li>
             <li class="nav-item dropdown dropdown-language">
@@ -360,18 +354,12 @@ $rowa = $stmta->fetch();
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-de"></i><span>German</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-fr"></i><span>French</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-um"></i><span>English</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-in"></i><span>Hindi</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-cn"></i><span>Chinese</span></a>
-                <a class="dropdown-item" href="javascript:;"><i
-                    class="flag-icon flag-icon-ae"></i><span>Arabic</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-de"></i><span>German</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-fr"></i><span>French</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-um"></i><span>English</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-in"></i><span>Hindi</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-cn"></i><span>Chinese</span></a>
+                <a class="dropdown-item" href="javascript:;"><i class="flag-icon flag-icon-ae"></i><span>Arabic</span></a>
               </div>
             </li>
           </ul>
