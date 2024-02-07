@@ -35,6 +35,35 @@
         <a class="has-arrow" href="javascript:;">
           <div class="parent-icon icon-color-11"><i class="bx bx-repeat"></i>
           </div>
+          <div class="menu-title">Master Pages</div>
+        </a>
+        <ul>
+          <li>
+            <a href="../m_pages">
+              <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+              </div>
+              <div class="menu-title">Pages</div>
+            </a>
+          </li>
+          <li>
+            <a href="../m_subpages">
+              <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+              </div>
+              <div class="menu-title">Subpages</div>
+            </a>
+          </li>
+          <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
+          </li>
+          <li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
+          </li>
+          <li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="has-arrow" href="javascript:;">
+          <div class="parent-icon icon-color-11"><i class="bx bx-repeat"></i>
+          </div>
           <div class="menu-title">Master Pengguna</div>
         </a>
         <ul>
@@ -42,14 +71,14 @@
             <a href="../m_user/pengurus.php">
               <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
               </div>
-              <div class="menu-title">Master Pengurus</div>
+              <div class="menu-title"> Pengurus</div>
             </a>
           </li>
           <li>
             <a href="../m_user">
               <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
               </div>
-              <div class="menu-title">Master Pengguna</div>
+              <div class="menu-title"> Pengguna</div>
             </a>
           </li>
           <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
