@@ -23,13 +23,7 @@
 
       </li>
       <li class="menu-label">Master Data</li>
-      <li>
-        <a href="../m_user">
-          <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
-          </div>
-          <div class="menu-title">Users</div>
-        </a>
-      </li>
+
       <li>
         <a href="../m_guru">
           <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
@@ -41,9 +35,23 @@
         <a class="has-arrow" href="javascript:;">
           <div class="parent-icon icon-color-11"><i class="bx bx-repeat"></i>
           </div>
-          <div class="menu-title">Master Data</div>
+          <div class="menu-title">Master Pengguna</div>
         </a>
         <ul>
+          <li>
+            <a href="../m_user/pengurus.php">
+              <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+              </div>
+              <div class="menu-title">Master Pengurus</div>
+            </a>
+          </li>
+          <li>
+            <a href="../m_user">
+              <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+              </div>
+              <div class="menu-title">Master Pengguna</div>
+            </a>
+          </li>
           <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
           </li>
           <li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
