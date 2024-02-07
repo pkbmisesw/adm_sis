@@ -16,8 +16,12 @@ $rowa = $stmta->fetch();
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- <link href="../../assets/css/pace.min.css" rel="stylesheet" />
-  <script src="../../assets/js/pace.min.js"></script> -->
+  <link href="../../assetsNew/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <link href="../../assetsNew/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="../../assetsNew/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+
+  <link href="../../assetsNew/css/pace.min.css" rel="stylesheet" />
+  <script src="../../assetsNew/js/pace.min.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../../assetsNew/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto&display=swap" />

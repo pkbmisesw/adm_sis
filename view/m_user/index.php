@@ -359,7 +359,7 @@ include '../footer.php';
   });
 </script>
 <!--Data Tables js-->
-<script src="../../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+<script src="../../assetsNew/plugins/datatable/js/jquery.dataTables.min.js"></script>
 
 <script>
   $(function() {
@@ -386,10 +386,18 @@ include '../footer.php';
     modal.find('.modal-body input').val(recipient)
   });
 </script>
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
 
+<!--plugins-->
+<script src="./../assetsNew/js/jquery.min.js"></script>
+<script src="./../assetsNew/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="./../assetsNew/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="./../assetsNew/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 
-<script src="../../assets/js/app.js"></script>
+<script src="../../assetsNew/js/bootstrap.bundle.min.js"></script>
+
+<script src="../..assetsNew/js/index.js"></script>
+
+<script src="../..assetsNew/js/app.js"></script>
 </body>
 
 </html>

@@ -37,6 +37,21 @@
           <div class="menu-title">Guru</div>
         </a>
       </li>
+      <li>
+        <a class="has-arrow" href="javascript:;">
+          <div class="parent-icon icon-color-11"><i class="bx bx-repeat"></i>
+          </div>
+          <div class="menu-title">Master Data</div>
+        </a>
+        <ul>
+          <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
+          </li>
+          <li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
+          </li>
+          <li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
+          </li>
+        </ul>
+      </li>
       <!-- <li>
         <a href="emailbox.html">
           <div class="parent-icon icon-color-2"><i class="bx bx-envelope"></i>
