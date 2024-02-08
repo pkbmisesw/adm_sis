@@ -1,4 +1,3 @@
-
 <?php
 include '../../config.php';
 error_reporting(0);
@@ -17,104 +16,114 @@ $master = "Subpages";
 $dba = "subpages";
 
 ?>
- 
-  <?php
-  include '../header.php';
-  include '../sidebar.php';
+
+<?php
+  include '../headernew.php';
+  include '../sidebarnew.php';
   ?>
 
-<link rel="stylesheet" href="../../public/bower_components/select2/dist/css/select2.min.css">  
+<link rel="stylesheet" href="../../public/bower_components/select2/dist/css/select2.min.css">
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <div class="page-wrapper">
+    <div class="page-content-wrapper">
+      <div class="page-content">
+        <!-- Content Header (Page header) -->
+        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+          <div class="breadcrumb-title pe-3">Home</div>
+          <div class="ps-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0 p-0">
+                <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"> </i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Table <?php echo $master; ?></li>
+              </ol>
+            </nav>
+          </div>
 
-        <?php echo $master; ?>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Tambah <?php echo $master; ?></a></li>
-        <li class="active"><?php echo $master; ?></li>
-      </ol>
-    </section>
+        </div>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="row">
-        <div class="col-xs-12">
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
 
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Tambah <?php echo $master; ?></h3>
-            </div>
-            
+              <div class="card radius-15">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h3 class="box-title">Tambah <?php echo $master; ?></h3>
+                  </div>
+                  <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
+                    enctype="multipart/form-data" class="form-horizontal">
 
-          
-                <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"  enctype="multipart/form-data" class="form-horizontal">
-                  
-                <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Pages</label>
-                    <div class="col-sm-8">  
-                    <select class="form-control select2" style="width: 100%;" name="pages_id">
-                      <?php
+                    <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Pages</label>
+                      <div class="col-sm-8">
+                        <select class="form-control select2" style="width: 100%;" name="pages_id">
+                          <?php
                       $sql = $conn->prepare("SELECT * FROM m_pages WHERE stat = 1");
                       $sql->execute();
                       while($data=$sql->fetch()) {
-                      ?> 
+                      ?>
                           <option value="<?php echo $data['id'];?>"><?php echo $data['nama'];?></option>
-                      <?php } ?>
-                    </select>
+                          <?php } ?>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                
-                
-                <div class="form-group">
-                    <label for="inputName" class="col-sm-2 control-label">Nama</label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="">
+
+
+                    <div class="form-group">
+                      <label for="inputName" class="col-sm-2 control-label">Nama</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="">
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                    <div class="col-sm-8">
-                      <textarea id="editor1" class="form-control" placeholder="description" name="des"></textarea>
+
+                    <div class="form-group">
+                      <label for="inputExperience" class="col-sm-2 control-label">Description</label>
+                      <div class="col-sm-8">
+                        <textarea id="editor1" class="form-control" placeholder="description" name="des"></textarea>
+                      </div>
                     </div>
-                  </div>
 
-                  
 
-                  
-                  
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-danger">Tambah</button>
+
+
+
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger">Tambah</button>
+                      </div>
                     </div>
-                  </div>
-                </form>
-          
-              <!-- /.tab-pane -->
+                  </form>
+
+                  <!-- /.tab-pane -->
 
 
 
-            <!-- /.box-body -->
+                  <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+
+            <!-- /.col -->
           </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
+          <!-- /.row -->
+        </section>
+        <!-- /.content -->
       </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
+    </div>
   </div>
+</div>
 
-  
 
-   
-  
-  <?php
+
+
+
+
+<?php
   include '../footer.php';
   ?>
 
@@ -122,15 +131,16 @@ $dba = "subpages";
 <script src="../../public/bower_components/ckeditor/ckeditor.js"></script>
 
 <script>
-  $(function () {
-    CKEDITOR.replace('editor1')
-    $('.select2').select2()
-  })
+$(function() {
+  CKEDITOR.replace('editor1')
+  $('.select2').select2()
+})
 </script>
-  
-    
+
+
 
 
 
 </body>
+
 </html>
