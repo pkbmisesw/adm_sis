@@ -53,23 +53,22 @@ include '../sidebarNew.php';
                     <h3 class="">Tambah <?php echo $master; ?></h3>
                   </div>
 
-
-
-                  <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambahs" method="post" enctype="multipart/form-data" class="form-horizontal">
+                  <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambahs" method="post"
+                    enctype="multipart/form-data" class="form-horizontal">
 
 
                     <input type="hidden" placeholder="Pages Id" name="pages_id" value="<?php echo $_GET['id']; ?>">
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Nama</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="">
                       </div>
                     </div>
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea id="editor1" class="form-control" placeholder="description" name="des"></textarea>
                       </div>
                     </div>
@@ -117,13 +116,13 @@ include '../footer.php';
 <script src="../../public/bower_components/ckeditor/ckeditor.js"></script>
 
 <script>
-  $(function() {
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace('editor1')
-    //bootstrap WYSIHTML5 - text editor
-    $('.textarea').wysihtml5()
-  })
+$(function() {
+  // Replace the <textarea id="editor1"> with a CKEditor
+  // instance, using default configuration.
+  CKEDITOR.replace('editor1')
+  //bootstrap WYSIHTML5 - text editor
+  $('.textarea').wysihtml5()
+})
 </script>
 
 

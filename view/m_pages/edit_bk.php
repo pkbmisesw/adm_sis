@@ -67,7 +67,7 @@ $dba = "pages";
 
                   <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">Nama</label>
-                    <div class="col-sm-8">
+                    <div class="">
                       <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama"
                         value="<?php echo $row['nama']; ?>">
                     </div>
@@ -75,7 +75,7 @@ $dba = "pages";
 
                   <div class="form-group">
                     <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                    <div class="col-sm-8">
+                    <div class="">
                       <textarea id="editor1" class="form-control" placeholder="description"
                         name="des"><?php echo $row['des']; ?></textarea>
                     </div>

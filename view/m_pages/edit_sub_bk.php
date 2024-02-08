@@ -71,7 +71,7 @@ $dba = "subpages";
                     <div class="form-group">
 
                       <label for="inputName" class="col-sm-2 control-label">Nama</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <a href="../m_post/index.php?stat=9" class="btn btn-danger">Gambar</a>
                         <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama"
                           value="<?php echo $row['nama']; ?>">
@@ -80,7 +80,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea id="editor1" class="form-control" placeholder="description"
                           name="des"><?php echo $row['des']; ?></textarea>
                       </div>
@@ -88,7 +88,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Status</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" placeholder="Status" name="stat"
                           value="<?php echo $row['stat']; ?>">
                         <small style="color:red;">* mengubah status menjadi 2 membuat halaman diarahkan ke halaman
@@ -98,7 +98,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Url</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" placeholder="Url" name="url"
                           value="<?php echo $row['url']; ?>">
                         <small style="color:red;">* url default adalah "subpages?p="</small>

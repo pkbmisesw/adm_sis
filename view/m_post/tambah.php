@@ -59,14 +59,14 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Title</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama" value="">
                       </div>
                     </div>
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea id="editor1" class="form-control" placeholder="description" name="des"></textarea>
                       </div>
                     </div>

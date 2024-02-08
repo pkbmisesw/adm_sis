@@ -68,7 +68,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Title</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" id="nama" placeholder="Title" name="nama"
                           value="<?php echo $row['nama']; ?>">
                       </div>
@@ -76,7 +76,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Upload Images</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="file" class="form-control" value="" id="a" onchange="tes()" name="berkas">
                         <input type="hidden" class="form-control" placeholder="File" name="gambar" value="" id="b">
                       </div>
@@ -90,7 +90,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Short Desc</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea class="form-control" placeholder="short description atau link jika pakai icon"
                           name="sdes"><?php echo $row['sdes']; ?></textarea>
                       </div>
@@ -98,7 +98,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea id="editor1" class="form-control" placeholder="description"
                           name="des"><?php echo $row['des']; ?></textarea>
                       </div>
@@ -106,7 +106,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Date</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" placeholder="Date" name="tgl"
                           value="<?php echo $row['tgl']; ?>">
                       </div>
@@ -114,7 +114,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Seo</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" placeholder="SEO" name="seo"
                           value="<?php echo $row['seo']; ?>">
                       </div>
@@ -122,7 +122,7 @@ $dba = "post";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Status</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" name="stat" value="<?php echo $row['stat']; ?>">
 
                         <a>1. Aktif</a><br>

@@ -69,7 +69,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Pages</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <select class="form-control select2" style="width: 100%;" name="pages_id">
                           <option value="<?php echo $row['pages_id'];?>"><?php echo $row['pages_id'];?></option>
 
@@ -90,7 +90,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Nama</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <input type="text" class="form-control" id="nama" placeholder="Nama" name="nama"
                           value="<?php echo $row['nama']; ?>">
                       </div>
@@ -98,7 +98,7 @@ $dba = "subpages";
 
                     <div class="form-group">
                       <label for="inputExperience" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-8">
+                      <div class="">
                         <textarea id="editor1" class="form-control" placeholder="description"
                           name="des"><?php echo $row['des']; ?></textarea>
                       </div>
