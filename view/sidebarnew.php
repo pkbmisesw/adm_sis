@@ -52,7 +52,13 @@
               <div class="menu-title">Subpages</div>
             </a>
           </li>
-
+          <li>
+            <a href="../m_post">
+              <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+              </div>
+              <div class="menu-title">Post</div>
+            </a>
+          </li>
         </ul>
       </li>
       <li>
