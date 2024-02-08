@@ -38,7 +38,6 @@ include '../sidebarNew.php';
               </ol>
             </nav>
           </div>
-
         </div>
         <!-- Main content -->
         <section class="content">
@@ -50,7 +49,8 @@ include '../sidebarNew.php';
                   <div class="card-title">
                     <h3 class="">Tambah <?php echo $master; ?></h3>
                   </div>
-                  <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambah" method="post" enctype="multipart/form-data" class="form-horizontal">
+                  <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambah" method="post"
+                    enctype="multipart/form-data" class="form-horizontal">
                     <div class="form-group">
                       <label for="inputName" class="col-sm-2 control-label">Nama</label>
                       <div class="">
@@ -64,11 +64,6 @@ include '../sidebarNew.php';
                         <textarea id="editor1" class="form-control" placeholder="description" name="des"></textarea>
                       </div>
                     </div>
-
-
-
-
-
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10 mt-2">
                         <button type="submit" class="btn btn-danger">Tambah</button>
@@ -82,14 +77,15 @@ include '../sidebarNew.php';
             <!-- /.box -->
           </div>
           <!-- /.col -->
+          <!-- /.row -->
+        </section>
       </div>
-      <!-- /.row -->
-      </section>
+
       <!-- /.content -->
     </div>
   </div>
 </div>
-</div>
+
 
 
 
@@ -103,13 +99,13 @@ include '../footer.php';
 <script src="../../public/bower_components/ckeditor/ckeditor.js"></script>
 
 <script>
-  $(function() {
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace('editor1')
-    //bootstrap WYSIHTML5 - text editor
-    $('.textarea').wysihtml5()
-  })
+$(function() {
+  // Replace the <textarea id="editor1"> with a CKEditor
+  // instance, using default configuration.
+  CKEDITOR.replace('editor1')
+  //bootstrap WYSIHTML5 - text editor
+  $('.textarea').wysihtml5()
+})
 </script>
 
 

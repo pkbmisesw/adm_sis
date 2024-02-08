@@ -52,12 +52,7 @@
               <div class="menu-title">Subpages</div>
             </a>
           </li>
-          <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
-          </li>
-          <li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
-          </li>
-          <li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
-          </li>
+
         </ul>
       </li>
       <li>
@@ -81,12 +76,7 @@
               <div class="menu-title"> Pengguna</div>
             </a>
           </li>
-          <li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
-          </li>
-          <li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
-          </li>
-          <li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
-          </li>
+
         </ul>
       </li>
       <!-- <li>
