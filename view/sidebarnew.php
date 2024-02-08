@@ -24,13 +24,7 @@
       </li>
       <li class="menu-label">Master Data</li>
 
-      <li>
-        <a href="../m_guru">
-          <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
-          </div>
-          <div class="menu-title">Guru</div>
-        </a>
-      </li>
+
       <li>
         <a class="has-arrow" href="javascript:;">
           <div class="parent-icon icon-color-11"><i class="bx bx-repeat"></i>
