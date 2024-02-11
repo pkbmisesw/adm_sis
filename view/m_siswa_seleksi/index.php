@@ -66,7 +66,7 @@ $ketnama = "Silahkan mengisi nama";
                     <h3 class="">Master Data <?php echo $master; ?></h3>
                   </div>
                   <!-- /.box-header -->
-                  <div class="box-body">
+                  <div class="box-body" style="overflow: scroll;">
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
                         <tr>
@@ -77,12 +77,85 @@ $ketnama = "Silahkan mengisi nama";
                           <th>NIK</th>
                           <th>Nomor KK</th>
                           <th>Nomor Akta</th>
+                          <th>Tempat Lahir</th>
+                          <th>Tanggal Lahir</th>
+                          <th>Tahun Lahir</th>
+                          <th>No Registrasi</th>
                           <th>Agama</th>
-                          <th>Alamat</th>
-                          <th>Nama Ibu</th>
-                          <th>Nama Ayah</th>
                           <th>Kebutuhan Khusus</th>
+                          <th>Warga</th>
+                          <th>Alamat</th>
+                          <th>RT</th>
+                          <th>RW</th>
+                          <th>Nama Dusun</th>
+                          <th>Kelurahan</th>
+                          <th>Kecamatan</th>
+                          <th>Kode pos</th>
+                          <th>Lintang</th>
+                          <th>Bujur</th>
+                          <th>Tempat tinggal</th>
+                          <th>Moda Transport</th>
+                          <th>Anak Keberapa</th>
+                          <th>Pekerjaan warga</th>
+                          <th>Terima KIP</th>
+                          <th>A M PIP</th>
+                          <th>Nama Ayah</th>
+                          <th>NIK Ayah</th>
+                          <th>Tahun Lahir Ayah</th>
+                          <th>Pendidikan Ayah</th>
+                          <th>Pekerjaan Ayah</th>
+                          <th>Penghasilan Ayah</th>
+                          <th>Kebutuhan Khusus Ayah</th>
+                          <th>Nama Ibu</th>
+                          <th>NIK Ibu</th>
+                          <th>Tahun Lahir Ibu</th>
+                          <th>Pendidikan Ibu</th>
+                          <th>Pekerjaan Ibu</th>
+                          <th>Penghasilan Ibu</th>
+                          <th>Kebutuhan Khusus Ibu</th>
+                          <th>Nama Wali</th>
+                          <th>NIK Wali</th>
+                          <th>Pendidikan Wali</th>
+
+                          <th>Penghasilan Wali</th>
+                          <th>Telepon Rumah</th>
                           <th>Hp</th>
+                          <th>Email</th>
+                          <th>Tinggi</th>
+                          <th>Berat</th>
+                          <th>Lingkar Kepala</th>
+                          <th>Jarak Tinggal</th>
+                          <th>Sebutkan</th>
+                          <th>Waktu Tempuh</th>
+                          <th>Jumlah Saudara</th>
+                          <th>Jenis Prestasi</th>
+                          <th>Tingkat Prestasi</th>
+                          <th>Nama Prestasi</th>
+                          <th>Tahun Prestasi</th>
+                          <th>Penyelenggara</th>
+                          <th>Peringkat</th>
+                          <th>Beasiswa</th>
+                          <th>Keterangan</th>
+                          <th>Mulai</th>
+                          <th>Selesai</th>
+                          <th>Jenis Kesejahteraan</th>
+                          <th>No kartu</th>
+                          <th>Nama Kartu</th>
+                          <th>Keahlian</th>
+                          <th>Pendaftaran</th>
+                          <th>Nis</th>
+                          <th>Kelas</th>
+                          <th>Tanggal Masuk</th>
+                          <th>Sekolah Asal</th>
+                          <th>NO Peserta</th>
+                          <th>No Seri Ijazah</th>
+                          <th>No SKHUN</th>
+                          <th>Keluar Karena</th>
+                          <th>Tanggal Keluar</th>
+                          <th>Alasan Keluar</th>
+                          <th>Surat Keterangan</th>
+                          <th>Status</th>
+
                           <th>Aksi</th>
                         </tr>
                       </thead>
@@ -99,17 +172,91 @@ $ketnama = "Silahkan mengisi nama";
                         <tr>
                           <td><?php echo $count; ?></td>
                           <td><?php echo $data['nama'];?></td>
-                          <td><?php echo $data['gender'];?></td>
+                          <td><?php echo $data['jenis_kelamin'];?></td>
                           <td><?php echo $data['nisn'];?></td>
                           <td><?php echo $data['nik'];?></td>
-                          <td><?php echo $data['n_kk'];?></td>
-                          <td><?php echo $data['n_akta'];?></td>
+                          <td><?php echo $data['no_kk'];?></td>
+                          <td><?php echo $data['no_akta'];?></td>
+                          <td><?php echo $data['tempat_lahir'];?></td>
+                          <td><?php echo $data['tanggal_lahir'];?></td>
+                          <td><?php echo $data['tahun_lahir'];?></td>
+                          <td><?php echo $data['no_reg'];?></td>
                           <td><?php echo $data['agama'];?></td>
+                          <td><?php echo $data['warga'];?></td>
+                          <td><?php echo $data['b_khusus'];?></td>
                           <td><?php echo $data['alamat'];?></td>
-                          <td><?php echo $data['nama_ibu'];?></td>
-                          <td><?php echo $data['nama_ayah'];?></td>
-                          <td><?php echo $data['k_khusus'];?></td>
-                          <td><?php echo $data['hp'];?></td>
+                          <td><?php echo $data['rt'];?></td>
+                          <td><?php echo $data['rw'];?></td>
+                          <td><?php echo $data['nama_dusun'];?></td>
+                          <td><?php echo $data['kel'];?></td>
+                          <td><?php echo $data['kec'];?></td>
+                          <td><?php echo $data['kode_pos'];?></td>
+                          <td><?php echo $data['lintang'];?></td>
+                          <td><?php echo $data['bujur'];?></td>
+                          <td><?php echo $data['tempat_tinggal'];?></td>
+                          <td><?php echo $data['moda_transport'];?></td>
+                          <td><?php echo $data['anak_keberapa'];?></td>
+                          <td><?php echo $data['pekerjaan_warga'];?></td>
+                          <td><?php echo $data['terima_kip'];?></td>
+                          <td><?php echo $data['a_m_pip'];?></td>
+                          <td><?php echo $data['nama_ayah_kandung'];?></td>
+                          <td><?php echo $data['nik_ayah'];?></td>
+                          <td><?php echo $data['tahun_lahir_ayah'];?></td>
+                          <td><?php echo $data['pendidikan_ayah'];?></td>
+                          <td><?php echo $data['pekerjaan_ayah'];?></td>
+                          <td><?php echo $data['penghasilan_ayah'];?></td>
+                          <td><?php echo $data['b_khusus_ayah'];?></td>
+                          <td><?php echo $data['ibu_kandung'];?></td>
+                          <td><?php echo $data['nik_ibu'];?></td>
+                          <td><?php echo $data['tahun_lahir_ibu'];?></td>
+                          <td><?php echo $data['pendidikan_ibu'];?></td>
+                          <td><?php echo $data['pekerjaan_ibu'];?></td>
+
+                          <td><?php echo $data['penghasilan_ibu'];?></td>
+                          <td><?php echo $data['b_khusus_ibu'];?></td>
+                          <td><?php echo $data['nama_wali'];?></td>
+                          <td><?php echo $data['nik_wali'];?></td>
+                          <td><?php echo $data['pendidikan_wali'];?></td>
+                          <td><?php echo $data['penghasilan_wali'];?></td>
+                          <td><?php echo $data['telepon_rumah'];?></td>
+                          <td><?php echo $data['no_hp'];?></td>
+                          <td><?php echo $data['email'];?></td>
+                          <td><?php echo $data['tinggi'];?></td>
+                          <td><?php echo $data['berat'];?></td>
+                          <td><?php echo $data['lingkar_kepala'];?></td>
+                          <td><?php echo $data['jarak_tinggal'];?></td>
+                          <td><?php echo $data['sebutkan'];?></td>
+                          <td><?php echo $data['waktu_tempuh'];?></td>
+                          <td><?php echo $data['j_saudara'];?></td>
+                          <td><?php echo $data['jenis_prestasi'];?></td>
+                          <td><?php echo $data['tingkat_prestasi'];?></td>
+                          <td><?php echo $data['nama_prestasi'];?></td>
+                          <td><?php echo $data['tahun_prestasi'];?></td>
+                          <td><?php echo $data['penyelenggara'];?></td>
+                          <td><?php echo $data['peringkat'];?></td>
+                          <td><?php echo $data['beasiswa'];?></td>
+                          <td><?php echo $data['ket'];?></td>
+                          <td><?php echo $data['mulai'];?></td>
+                          <td><?php echo $data['selesai'];?></td>
+                          <td><?php echo $data['jenis_kesejahteraan'];?></td>
+                          <td><?php echo $data['no_kartu'];?></td>
+                          <td><?php echo $data['nama_kartu'];?></td>
+                          <td><?php echo $data['keahlian'];?></td>
+                          <td><?php echo $data['pendaftaran'];?></td>
+                          <td><?php echo $data['nis'];?></td>
+
+                          <td><?php echo $data['kelas'];?></td>
+                          <td><?php echo $data['tanggal_masuk'];?></td>
+                          <td><?php echo $data['sekolah_asal'];?></td>
+                          <td><?php echo $data['no_peserta'];?></td>
+                          <td><?php echo $data['no_seri_ijazah'];?></td>
+                          <td><?php echo $data['no_skhun'];?></td>
+                          <td><?php echo $data['keluar_karena'];?></td>
+                          <td><?php echo $data['tanggal_keluar'];?></td>
+                          <td><?php echo $data['alasan_keluar'];?></td>
+                          <td><?php echo $data['suket'];?></td>
+                          <td><?php echo $data['stat'];?></td>
+
                           <td>
                             <button data-id="<?= $data['id'] ?>" data-nama="<?= $data['nama'] ?>"
                               data-gender="<?= $data['gender']?>" data-nisn="<?= $data['nisn']?>"
@@ -426,7 +573,14 @@ $(function() {
 })
 </script>
 
-
-</body>
-
-</html>
+<script>
+$('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+});
+</script>

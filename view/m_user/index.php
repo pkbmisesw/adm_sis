@@ -56,7 +56,6 @@ include '../sidebarnew.php';
             <div class="col-xs-12">
               <div class="card radius-15">
                 <div class="card-body">
-
                   <div class="card-title">
                     <h3 class="">Master Data <?php echo $master; ?></h3>
                   </div>
@@ -86,20 +85,25 @@ include '../sidebarnew.php';
                         while ($data = $sql->fetch()) {
                         ?>
 
-                          <tr>
-                            <td><?php echo $count; ?></td>
-                            <td><?php echo $data['nik']; ?></td>
-                            <td><?php echo $data['nama']; ?></td>
-                            <td><?php echo $data['level_id']; ?></td>
-                            <td><?php echo $data['email']; ?></td>
-                            <td><?php echo $data['status_aktif']; ?></td>
-                            <td><?php echo $data['hp']; ?></td>
-                            <td><a href="../../images/<?php echo $data['ktp']; ?>">Lihat</a></td>
-                            <td>
-                              <button data-id="<?= $data['id'] ?>" data-nik="<?= $data['nik'] ?>" data-nama="<?= $data['nama'] ?>" data-level_id="<?= $data['level_id'] ?>" data-email="<?= $data['email'] ?>" data-status_aktif="<?= $data['status_aktif'] ?>" data-hp="<?= $data['hp'] ?>" data-ktp="<?= $data['ktp'] ?>" type="button" class="btn btn-light btn_update" data-toggle="modal">✎</button>
-                              <a class="btn btn-light" onclick="return confirm('are you want deleting data')" href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>">❌</a>
-                            </td>
-                          </tr>
+                        <tr>
+                          <td><?php echo $count; ?></td>
+                          <td><?php echo $data['nik']; ?></td>
+                          <td><?php echo $data['nama']; ?></td>
+                          <td><?php echo $data['level_id']; ?></td>
+                          <td><?php echo $data['email']; ?></td>
+                          <td><?php echo $data['status_aktif']; ?></td>
+                          <td><?php echo $data['hp']; ?></td>
+                          <td><a href="../../images/<?php echo $data['ktp']; ?>">Lihat</a></td>
+                          <td>
+                            <button data-id="<?= $data['id'] ?>" data-nik="<?= $data['nik'] ?>"
+                              data-nama="<?= $data['nama'] ?>" data-level_id="<?= $data['level_id'] ?>"
+                              data-email="<?= $data['email'] ?>" data-status_aktif="<?= $data['status_aktif'] ?>"
+                              data-hp="<?= $data['hp'] ?>" data-ktp="<?= $data['ktp'] ?>" type="button"
+                              class="btn btn-light btn_update" data-toggle="modal">✎</button>
+                            <a class="btn btn-light" onclick="return confirm('are you want deleting data')"
+                              href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>">❌</a>
+                          </td>
+                        </tr>
 
                         <?php
                           $count = $count + 1;
@@ -144,7 +148,8 @@ include '../sidebarnew.php';
                 </button>
               </div>
               <div class="modal-body">
-                <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambah" method="post" enctype="multipart/form-data">
+                <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambah" method="post"
+                  enctype="multipart/form-data">
 
                   <div class="form-group">
                     <label class="col-form-label">Nik :</label>
@@ -153,7 +158,8 @@ include '../sidebarnew.php';
 
                   <div class="form-group">
                     <label class="col-form-label">Nama :</label>
-                    <input type="text" class="form-control" name="nama" placeholder="<?php echo $ketnama . " " . $master . " ..."; ?>" />
+                    <input type="text" class="form-control" name="nama"
+                      placeholder="<?php echo $ketnama . " " . $master . " ..."; ?>" />
                   </div>
 
                   <div class="form-group">
@@ -198,7 +204,8 @@ include '../sidebarnew.php';
         </div>
 
         <!-- Modal Edit -->
-        <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -274,74 +281,74 @@ include '../footer.php';
 
 
 <script type="text/javascript">
-  $(document).ready(function() {
+$(document).ready(function() {
 
-    $('#btn-save-update').click(function() {
-      $.ajax({
-        url: "edit.php",
-        type: 'post',
-        data: $('#form-edit-transaksi-masuk').serialize(),
-        success: function(data) {
-          var res = JSON.parse(data);
-          if (res.code == 200) {
-            alert('Success Update');
-            location.reload();
-          }
+  $('#btn-save-update').click(function() {
+    $.ajax({
+      url: "edit.php",
+      type: 'post',
+      data: $('#form-edit-transaksi-masuk').serialize(),
+      success: function(data) {
+        var res = JSON.parse(data);
+        if (res.code == 200) {
+          alert('Success Update');
+          location.reload();
         }
-      })
-    });
-
-    $(document).on('click', '.btn_update', function() {
-      console.log("Masuk");
-      $("#id_edit").val($(this).attr('data-id'));
-      $("#nik_edit").val($(this).attr('data-nik'));
-      $("#nama_edit").val($(this).attr('data-nama'));
-      $("#level_id_edit").val($(this).attr('data-level_id'));
-      $("#email_edit").val($(this).attr('data-email'));
-      $("#status_aktif_edit").val($(this).attr('data-status_aktif'));
-      $("#hp_edit").val($(this).attr('data-hp'));
-      $("#ktp_edit").val($(this).attr('data-ktp'));
-      $('#edit').modal('show');
-    });
+      }
+    })
   });
 
-  $(document).ready(function() {
-    $('#tambah').on('shown.bs.modal', function() {
-      $('#myInput').trigger('focus');
-    });
-
-    $('#edit').on('shown.bs.modal', function() {
-      $('#nik_edit').trigger('focus');
-    });
-
-
+  $(document).on('click', '.btn_update', function() {
+    console.log("Masuk");
+    $("#id_edit").val($(this).attr('data-id'));
+    $("#nik_edit").val($(this).attr('data-nik'));
+    $("#nama_edit").val($(this).attr('data-nama'));
+    $("#level_id_edit").val($(this).attr('data-level_id'));
+    $("#email_edit").val($(this).attr('data-email'));
+    $("#status_aktif_edit").val($(this).attr('data-status_aktif'));
+    $("#hp_edit").val($(this).attr('data-hp'));
+    $("#ktp_edit").val($(this).attr('data-ktp'));
+    $('#edit').modal('show');
   });
+});
+
+$(document).ready(function() {
+  $('#tambah').on('shown.bs.modal', function() {
+    $('#myInput').trigger('focus');
+  });
+
+  $('#edit').on('shown.bs.modal', function() {
+    $('#nik_edit').trigger('focus');
+  });
+
+
+});
 </script>
 <!--Data Tables js-->
 <script src="../../assetsNew/plugins/datatable/js/jquery.dataTables.min.js"></script>
 
 <script>
-  $(function() {
-    $('#example1').DataTable({
-      'paging': true,
-      'lengthChange': true,
-      'searching': true,
-      'ordering': true,
-      'info': true,
-      'scrollX': true,
-      'autoWidth': false
-    })
+$(function() {
+  $('#example1').DataTable({
+    'paging': true,
+    'lengthChange': true,
+    'searching': true,
+    'ordering': true,
+    'info': true,
+    'scrollX': true,
+    'autoWidth': false
   })
+})
 </script>
 
 <script>
-  $('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
-    var button = $(event.relatedTarget) // Button that triggered the modal
-    var recipient = button.data('whatever') // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
-  });
+$('#exampleVaryingModalContent').on('show.bs.modal', function(event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+});
 </script>
