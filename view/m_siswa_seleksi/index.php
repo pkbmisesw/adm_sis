@@ -55,9 +55,7 @@ $ketnama = "Silahkan mengisi nama";
         <section class="content">
           <div class="row">
             <div class="col-xs-12">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah">
-                Tambah
-              </button>
+
               <!-- /.box -->
 
               <div class="card radius-15">
@@ -321,7 +319,7 @@ $ketnama = "Silahkan mengisi nama";
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <!-- <div class="modal-body">
                 <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
                   enctype="multipart/form-data">
 
@@ -389,6 +387,417 @@ $ketnama = "Silahkan mengisi nama";
                     <label class="control-label">Hp : </label>
                     <input type="text" class="form-control" name="hp" placeholder="Silahkan Mengisi Nomor Hp" />
                   </div>
+
+
+              </div> -->
+
+              <div class="modal-body">
+                <form action="../../controller/<?php echo $dba;?>_controller.php?op=tambah" method="post"
+                  enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label class="col-form-label">Nama :</label>
+                    <input type="text" class="form-control" id="myInput" name="nama" placeholder="Silahkan isi nama" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Jenis Kelamin : </label>
+                    <input type="text" class="form-control" name="gender"
+                      placeholder="Silahkan Mengisi Jenis Kelamin" />
+                    <small style="color:red;">* isi 1 untuk Laki - Laki, 2 untuk Perempuan</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">NISN : </label>
+                    <input type="text" class="form-control" name="nisn" placeholder="Silahkan Mengisi NISN" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">NIK : </label>
+                    <input type="text" class="form-control" name="nik" placeholder="Silahkan Mengisi NIK" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Nomor KK : </label>
+                    <input type="text" class="form-control" name="n_kk" placeholder="Silahkan Mengisi Nomor KK" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Nomor Akta : </label>
+                    <input type="text" class="form-control" name="n_akta" placeholder="Silahkan Mengisi Nomor akta" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tempat Lahir: </label>
+                    <input type="text" class="form-control" name="tempat_lahir"
+                      placeholder="Silahkan Mengisi Tempat Lahir" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tanggal Lahir: </label>
+                    <input type="text" class="form-control" name="tanggal_lahir"
+                      placeholder="Silahkan Mengisi Tanggal Lahir" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tahun Lahir: </label>
+                    <input type="text" class="form-control" name="tahun_lahir"
+                      placeholder="Silahkan Mengisi Tahun Lahir" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">No Registrasi: </label>
+                    <input type="text" class="form-control" name="no_reg"
+                      placeholder="Silahkan Mengisi No Registrasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">No Registrasi: </label>
+                    <input type="text" class="form-control" name="no_reg"
+                      placeholder="Silahkan Mengisi No Registrasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Agama : </label>
+                    <input type="text" class="form-control" name="agama" placeholder="Silahkan Mengisi Agama" />
+                    <small style="color:red;">* 1. Islam, 2. Kristen, 3.Katolik, 4.Hindu, 5. Budha</small>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kebutuhan Khusus : </label>
+                    <input type="text" class="form-control" name="b_khusus"
+                      placeholder="Silahkan Mengisi Kebutuhan Khusus" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Alamat : </label>
+                    <input type="text" class="form-control" name="alamat" placeholder="Silahkan Mengisi Alamat" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">RT : </label>
+                    <input type="text" class="form-control" name="rt" placeholder="Silahkan Mengisi RT" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">RW : </label>
+                    <input type="text" class="form-control" name="rw" placeholder="Silahkan Mengisi RW" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">RW : </label>
+                    <input type="text" class="form-control" name="rw" placeholder="Silahkan Mengisi RW" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Dusun : </label>
+                    <input type="text" class="form-control" name="nama_dusun"
+                      placeholder="Silahkan Mengisi Nama Dusun" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kelurahan : </label>
+                    <input type="text" class="form-control" name="kel" placeholder="Silahkan Mengisi Kelurahan" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kecamatan : </label>
+                    <input type="text" class="form-control" name="kec" placeholder="Silahkan Mengisi Kecamatan" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kode Pos : </label>
+                    <input type="text" class="form-control" name="kode_pos" placeholder="Silahkan Mengisi Kode Pos" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Lintang : </label>
+                    <input type="text" class="form-control" name="lintang" placeholder="Silahkan Mengisi Lintang" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Bujur : </label>
+                    <input type="text" class="form-control" name="bujur" placeholder="Silahkan Mengisi Bujur" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tempat Tinggal : </label>
+                    <input type="text" class="form-control" name="tempat_tinggal"
+                      placeholder="Silahkan Mengisi Tempat Tinggal" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Moda Transportasi : </label>
+                    <input type="text" class="form-control" name="moda_transport"
+                      placeholder="Silahkan Mengisi Moda Transportasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Anak Keberapa : </label>
+                    <input type="text" class="form-control" name="anak_keberapa"
+                      placeholder="Silahkan Mengisi Anak Keberapa" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Pekerjaan Warga : </label>
+                    <input type="text" class="form-control" name="pekerjaan_warga"
+                      placeholder="Silahkan Mengisi Pekerjaan Warga" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Terima KIP : </label>
+                    <input type="text" class="form-control" name="terima_kip"
+                      placeholder="Silahkan Mengisi Terima KIP (YA / TIDAK)" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">A M PIP : </label>
+                    <input type="text" class="form-control" name="a_m_pip" placeholder="Silahkan Mengisi A M PIP" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Ayah : </label>
+                    <input type="text" class="form-control" name="nama_ayah_kandung"
+                      placeholder="Silahkan Mengisi Nama Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">NIK Ayah : </label>
+                    <input type="text" class="form-control" name="nik_ayah" placeholder="Silahkan Mengisi NIK Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tahun Lahir Ayah : </label>
+                    <input type="text" class="form-control" name="tahun_lahir_ayah"
+                      placeholder="Silahkan Mengisi Tahun Lahir Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Pendidikan Ayah : </label>
+                    <input type="text" class="form-control" name="pendidikan_ayah"
+                      placeholder="Silahkan Mengisi Pendidikan Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Pekerjaan Ayah : </label>
+                    <input type="text" class="form-control" name="pekerjaan_ayah"
+                      placeholder="Silahkan Mengisi Pekerjaan Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Penghasilan Ayah : </label>
+                    <input type="text" class="form-control" name="penghasilan_ayah"
+                      placeholder="Silahkan Mengisi Penghasilan Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kebutuhan Khusus Ayah : </label>
+                    <input type="text" class="form-control" name="b_khusus_ayah"
+                      placeholder="Silahkan Mengisi Kebutuhan Khusus Ayah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Ibu : </label>
+                    <input type="text" class="form-control" name="ibu_kandung"
+                      placeholder="Silahkan Mengisi Nama Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">NIK Ibu : </label>
+                    <input type="text" class="form-control" name="nik_ibu" placeholder="Silahkan Mengisi NIK Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tahun Lahir Ibu : </label>
+                    <input type="text" class="form-control" name="tahun_lahir_ibu"
+                      placeholder="Silahkan Mengisi Tahun Lahir Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"> Pendidikan Ibu : </label>
+                    <input type="text" class="form-control" name="pendidikan_ibu"
+                      placeholder="Silahkan Mengisi  Pendidikan Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Penghasilan Ibu : </label>
+                    <input type="text" class="form-control" name="penghasilan_ibu"
+                      placeholder="Silahkan Mengisi Penghasilan Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kebutuhan Khusus Ibu : </label>
+                    <input type="text" class="form-control" name="b_khusus_ibu"
+                      placeholder="Silahkan Mengisi Kebutuhan Khusus Ibu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Wali : </label>
+                    <input type="text" class="form-control" name="nama_wali" placeholder="Silahkan Mengisi Nama Wali" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">NIK Wali : </label>
+                    <input type="text" class="form-control" name="nik_wali" placeholder="Silahkan Mengisi NIK Wali" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Pendidikan Wali : </label>
+                    <input type="text" class="form-control" name="pendidikan_wali"
+                      placeholder="Silahkan Mengisi Pendidikan Wali" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Penghasilan Wali : </label>
+                    <input type="text" class="form-control" name="penghasilan_wali"
+                      placeholder="Silahkan Mengisi Penghasilan Wali" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Telepon Rumah : </label>
+                    <input type="text" class="form-control" name="telepon_rumah"
+                      placeholder="Silahkan Mengisi Telepon Rumah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">No HP : </label>
+                    <input type="text" class="form-control" name="no_hp" placeholder="Silahkan Mengisi No HP" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Email : </label>
+                    <input type="text" class="form-control" name="email" placeholder="Silahkan Mengisi Email" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tinggi : </label>
+                    <input type="text" class="form-control" name="tinggi" placeholder="Silahkan Mengisi Tinggi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Berat : </label>
+                    <input type="text" class="form-control" name="berat" placeholder="Silahkan Mengisi Berat" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Lingkar Kepala : </label>
+                    <input type="text" class="form-control" name="lingkar_kepala"
+                      placeholder="Silahkan Mengisi Lingkar Kepala" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Jarak Tinggal : </label>
+                    <input type="text" class="form-control" name="jarak_tinggal"
+                      placeholder="Silahkan Mengisi Jarak Tinggal" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Sebutkan : </label>
+                    <input type="text" class="form-control" name="sebutkan" placeholder="Silahkan Mengisi Sebutkan" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Waktu Tempuh : </label>
+                    <input type="text" class="form-control" name="waktu_tempuh"
+                      placeholder="Silahkan Mengisi Waktu Tempuh" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Jumlah Saudara : </label>
+                    <input type="text" class="form-control" name="j_saudara"
+                      placeholder="Silahkan Mengisi Jumlah Saudara" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Jenis Prestasi : </label>
+                    <input type="text" class="form-control" name="jenis_prestasi"
+                      placeholder="Silahkan Mengisi Jenis Prestasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tingkat Prestasi : </label>
+                    <input type="text" class="form-control" name="tingkat_prestasi"
+                      placeholder="Silahkan Mengisi Tingkat Prestasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Prestasi : </label>
+                    <input type="text" class="form-control" name="nama_prestasi"
+                      placeholder="Silahkan Mengisi Nama Prestasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tahun Prestasi : </label>
+                    <input type="text" class="form-control" name="tahun_prestasi"
+                      placeholder="Silahkan Mengisi Tahun Prestasi" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Penyelenggara : </label>
+                    <input type="text" class="form-control" name="penyelenggara"
+                      placeholder="Silahkan Mengisi Penyelenggara" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Peringkat : </label>
+                    <input type="text" class="form-control" name="peringkat" placeholder="Silahkan Mengisi Peringkat" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Beasiswa : </label>
+                    <input type="text" class="form-control" name="beasiswa" placeholder="Silahkan Mengisi Beasiswa" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Keterangan : </label>
+                    <input type="text" class="form-control" name="ket" placeholder="Silahkan Mengisi Keterangan" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Mulai : </label>
+                    <input type="text" class="form-control" name="mulai" placeholder="Silahkan Mengisi Mulai" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Selesai : </label>
+                    <input type="text" class="form-control" name="selesai" placeholder="Silahkan Mengisi Selesai" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Jenis Kesejahteraan : </label>
+                    <input type="text" class="form-control" name="jenis_kesejahteraan"
+                      placeholder="Silahkan Mengisi Jenis Kesejahteraan" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">No Kartu : </label>
+                    <input type="text" class="form-control" name="no_kartu" placeholder="Silahkan Mengisi No Kartu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nama Kartu : </label>
+                    <input type="text" class="form-control" name="nama_kartu"
+                      placeholder="Silahkan Mengisi Nama Kartu" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Keahlian : </label>
+                    <input type="text" class="form-control" name="keahlian" placeholder="Silahkan Mengisi Keahlian" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Pendaftaran : </label>
+                    <input type="text" class="form-control" name="pendaftaran"
+                      placeholder="Silahkan Mengisi Pendaftaran" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">NIS : </label>
+                    <input type="text" class="form-control" name="nis" placeholder="Silahkan Mengisi NIS" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Kelas : </label>
+                    <input type="text" class="form-control" name="kelas" placeholder="Silahkan Mengisi Kelas" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tanggal Masuk : </label>
+                    <input type="text" class="form-control" name="tanggal_masuk"
+                      placeholder="Silahkan Mengisi Tanggal Masuk" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Sekolah Asal : </label>
+                    <input type="text" class="form-control" name="sekolah_asal"
+                      placeholder="Silahkan Mengisi Sekolah Asal" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nomor Peserta : </label>
+                    <input type="text" class="form-control" name="no_peserta"
+                      placeholder="Silahkan Mengisi Nomor Peserta" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nomor Seri Ijazah : </label>
+                    <input type="text" class="form-control" name="no_seri_ijazah"
+                      placeholder="Silahkan Mengisi Nomor Seri Ijazah" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Nomor SKHUN : </label>
+                    <input type="text" class="form-control" name="no_skhun"
+                      placeholder="Silahkan Mengisi Nomor SKHUN" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Keluar Karena : </label>
+                    <input type="text" class="form-control" name="keluar_karena"
+                      placeholder="Silahkan Mengisi Keluar Karena" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tanggal Keluar : </label>
+                    <input type="text" class="form-control" name="tanggal_keluar"
+                      placeholder="Silahkan Mengisi Tanggal Keluar" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Alasan Keluar : </label>
+                    <input type="text" class="form-control" name="alasan_keluar"
+                      placeholder="Silahkan Mengisi Alasan Keluar" />
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Surat Keterangan : </label>
+                    <input type="text" class="form-control" name="suket"
+                      placeholder="Silahkan Mengisi Surat Keterangan" />
+                  </div>
+                  <!-- <div class="form-group">
+                    <label class="control-label">Nama Ibu : </label>
+                    <input type="text" class="form-control" name="nama_ibu" placeholder="Silahkan Mengisi Nama Ibu" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Nama Ayah : </label>
+                    <input type="text" class="form-control" name="nama_ayah" placeholder="Silahkan Mengisi Nama Ayah" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Kebutuhan Khusus : </label>
+                    <input type="text" class="form-control" name="k_khusus"
+                      placeholder="Silahkan Mengisi Kebutuhan Khusus" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Hp : </label>
+                    <input type="text" class="form-control" name="hp" placeholder="Silahkan Mengisi Nomor Hp" />
+                  </div> -->
 
 
               </div>

@@ -94,21 +94,21 @@
             </a>
           </li>
           <li>
-            <a href="../m_user">
+            <a href="../m_siswa_seleksi">
               <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
               </div>
               <div class="menu-title">Siswa Diterima</div>
             </a>
           </li>
           <li>
-            <a href="../m_user">
+            <a href="../m_siswa_seleksi">
               <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
               </div>
               <div class="menu-title">Siswa Lulus</div>
             </a>
           </li>
           <li>
-            <a href="../m_user">
+            <a href="../m_siswa_seleksi">
               <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
               </div>
               <div class="menu-title">Siswa Alumni</div>
