@@ -69,10 +69,10 @@ include '../header.php';
                                     <td><button data-id="<?= $data['id'] ?>" data-nama="<?= $data['nama'] ?>"
                                                 data-des="<?= $data['des'] ?>" data-id_kelas="<?= $data['id_kelas']; ?>"
                                                 type="button" class="btn btn-light-warning p-1 icon-color-4 btn_update"
-                                                data-bs-toggle="modal">✎</button>
+                                                data-bs-toggle="modal"><i class="bx bx-pencil"></i></button>
                                         <a class="btn btn-light-danger p-1"
                                            onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"
-                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>">❌</a></td>
+                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>"><i class="bx bx-x"></i></a></td>
                                 </tr>
                                 <?php $count++; } ?>
                                 </tbody>
