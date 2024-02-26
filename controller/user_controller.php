@@ -7,15 +7,11 @@ $op = $_GET['op'];
 if($op == "tambah"){
     $nik = $_POST['nik'];
     $nama = $_POST['nama'];
-    $nip = $_POST['nip'];
-    $pangkat = $_POST['pangkat'];
-    $jabatan = $_POST['jabatan'];
+    $level_id = $_POST['level_id'];
     $email = $_POST['email'];
     $pass = $_POST['password'];
-    $level_id = $_POST['level_id'];
     $status_aktif = $_POST['status_aktif'];
     $hp = $_POST['hp'];
-    $ktp = $_POST['ktp'];
 
     $pass = password_hash($pass, PASSWORD_BCRYPT);
 
@@ -23,29 +19,20 @@ if($op == "tambah"){
         $sql = "INSERT INTO m_user SET
 			nik = :nik,
 			nama = :nama,
-			nip = :nip,
-			pangkat = :pangkat,
-			jabatan = :jabatan,
 			email = :email,
 			password = :password,
 			level_id = :level_id,
 			status_aktif = :status_aktif,
-			hp = :hp,
-			ktp = :ktp"
-        ;
+			hp = :hp";
 
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':nik', $nik);
         $stmt->bindParam(':nama', $nama);
-        $stmt->bindParam(':nip', $nip);
-        $stmt->bindParam(':pangkat', $pangkat);
-        $stmt->bindParam(':jabatan', $jabatan);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':password', $pass);
         $stmt->bindParam(':level_id', $level_id);
         $stmt->bindParam(':status_aktif', $status_aktif);
         $stmt->bindParam(':hp', $hp);
-        $stmt->bindParam(':ktp', $ktp);
         $stmt->execute();
     }
     catch(PDOException $e) {

@@ -36,16 +36,7 @@ include '../header.php';
                         </nav>
                     </div>
                     <div class="ms-auto">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary">Settings</button>
-                            <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
-                                <a class="dropdown-item" href="javascript:;">Another action</a>
-                                <a class="dropdown-item" href="javascript:;">Something else here</a>
-                                <div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-tambah">Tambah Data</button>
                     </div>
                 </div>
                 <!--end breadcrumb-->
@@ -124,6 +115,72 @@ include '../header.php';
     <!--end overlay-->
     <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
     <!--End Back To Top Button-->
+
+<!-- Modal Tambah -->
+<div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Data</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="../../controller/<?php echo $dba; ?>_controller.php?op=tambah" method="POST" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="example1" class="form-label">Nik : </label>
+                            <input type="text" class="form-control"
+                                   name="nik" required/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="example2" class="form-label">Nama :</label>
+                            <input type="text" class="form-control"
+                                   name="nama" required/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="example3" class="form-label">Level Id :</label>
+                            <input type="text" class="form-control"
+                                   name="level_id" required/>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="example3" class="form-label">Email : </label>
+                            <input type="email" class="form-control"
+                                   name="email" required/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="example3" class="form-label">Password : </label>
+                            <input type="password" class="form-control"
+                                   name="password" required/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="example2" class="form-label">Status Aktif
+                                :</label>
+                            <input type="text" class="form-control"
+                                   name="status_aktif" required/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="example2" class="form-label">HP :</label>
+                            <input type="text" class="form-control"
+                                   name="hp" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
     <!-- Modal Edit -->
     <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -217,10 +274,14 @@ include '../footer.php';
             $('#edit').modal('show');
         });
 
+        $("#btn-tambah").click(function(){
+           $('#tambah').modal('show');
+        });
+
         //Modal Edit Save Button Handler
         $('#btn-save-update').click(function () {
             $.ajax({
-                url: "edit-pengguna.php",
+                url: "edit.php",
                 type: 'post',
                 data: $('#form-edit-transaksi-masuk').serialize(),
                 success: function (data) {
