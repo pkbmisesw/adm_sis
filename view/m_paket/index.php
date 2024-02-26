@@ -62,16 +62,19 @@ include '../header.php';
                                 $sql = $conn->prepare("SELECT m_paket.id, m_paket.codx, m_paket.nama, m_paket.des, m_jabatan.nama as nama_jabatan FROM m_paket INNER JOIN m_jabatan ON m_paket.id_jabatan = m_jabatan.codx ORDER BY m_paket.id DESC");
                                 $sql->execute();
                                 while($data = $sql->fetch()){
+                                    $sql_soal = $conn->prepare("SELECT count(*) AS total FROM m_soal WHERE id_paket=:id_paket");
+                                    $sql_soal->execute([":id_paket" => $data['codx']]);
+                                    $data_soal = $sql_soal->fetch();
                                 ?>
                                 <tr>
                                     <td><?php echo $count; ?></td>
                                     <td><?php echo $data['nama_jabatan']; ?></td>
                                     <td><?php echo $data['nama']; ?></td>
                                     <td><?php echo $data['des']; ?></td>
-                                    <td></td>
+                                    <td><?php echo $data_soal['total'] . " - Soal"; ?></td>
                                     <td>
                                         <a class="btn btn-light-primary p-1"
-                                           href="soal?pid=<?php echo $data['codx']; ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
+                                           href="soal.php?pid=<?php echo $data['codx']; ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
                                         <button data-id="<?= $data['id'] ?>" data-nama="<?= $data['nama'] ?>"
                                                 data-des="<?= $data['des'] ?>"
                                                 type="button" class="btn btn-light-warning p-1 icon-color-4 btn_update"

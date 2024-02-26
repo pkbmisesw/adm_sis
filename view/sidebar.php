@@ -29,17 +29,6 @@
             <li class="menu-label">Master</li>
             <li>
                 <a href="javascript:;" class="has-arrow">
-                    <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
-                    </div>
-                    <div class="menu-title">User</div>
-                </a>
-                <ul>
-                    <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;" class="has-arrow">
                     <div class="parent-icon icon-color-5"><i class="bx bx-data"></i>
                     </div>
                     <div class="menu-title">Data</div>
@@ -53,6 +42,17 @@
                     </li>
 
 
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="has-arrow">
+                    <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+                    </div>
+                    <div class="menu-title">User</div>
+                </a>
+                <ul>
+                    <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-label">Others</li>
