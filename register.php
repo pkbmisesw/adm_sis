@@ -41,17 +41,7 @@ include 'head.php';
                                     <h3 class="mt-4 font-weight-bold">Create an Account</h3>
                                 </div>
                                 <div class="">
-                                    <div class="d-grid">
-                                        <a class="btn my-4 shadow-sm btn-white" href="javascript:;"> <span class="d-flex justify-content-center align-items-center">
-											<img class="me-2" src="assets/images/icons/search.svg" width="16" alt="Image Description">
-											<span>Sign Up with Google</span>
-												</span>
-                                        </a> <a href="javascript:;" class="btn btn-facebook"><i class="bx bxl-facebook me-1"></i>Sign Up with Facebook</a>
-                                    </div>
-                                    <div class="login-separater text-center mb-4"> <span>OR SIGN UP WITH EMAIL</span>
-                                        <hr>
-                                    </div>
-                                    <div class="form-body">
+                                    <div class="form-body mt-xl-5">
                                         <form class="row g-3" method="POST">
                                             <div class="col-12">
                                                 <label for="inputFirstName" class="form-label">Full Name</label>

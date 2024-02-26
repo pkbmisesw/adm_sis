@@ -8,7 +8,7 @@
                 <img src="../../assets/images/logo-icon.png" class="logo-icon-2" alt="" />
             </div>
             <div>
-                <h4 class="logo-text">Syndash</h4>
+                <h4 class="logo-text">Si Ujian</h4>
             </div>
             <a href="javascript:;" class="toggle-btn ms-auto"> <i class="bx bx-menu"></i>
             </a>
@@ -30,11 +30,15 @@
             </li>
             <li class="menu-label">Master</li>
             <li>
-                <a href="../m_users">
+                <a href="javascript:;" class="has-arrow">
                     <div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
                     </div>
-                    <div class="menu-title">Master Pengguna</div>
+                    <div class="menu-title">User</div>
                 </a>
+                <ul>
+                    <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-label">Others</li>
             <li>
