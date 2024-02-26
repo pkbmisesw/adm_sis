@@ -22,9 +22,7 @@
                     <div class="menu-title">Dashboard</div>
                 </a>
                 <ul>
-                    <li> <a href=""><i class="bx bx-right-arrow-alt"></i>Analytics</a>
-                    </li>
-                    <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Sales</a>
+                    <li> <a href="../admin/"><i class="bx bx-right-arrow-alt"></i>Home</a>
                     </li>
                 </ul>
             </li>
