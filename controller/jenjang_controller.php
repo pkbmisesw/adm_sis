@@ -5,9 +5,17 @@ session_start();
 
 $op = $_GET['op'];
 if($op == "tambah"){
+    $characters = '0123456789';
+
     $id_kelas = $_POST['id_kelas'];
     $nama = $_POST['nama'];
     $des = $_POST['des'];
+    $codx = "gen2023102";
+
+    for($i = 0; $i < 10; $i++){
+        $index = rand(0, strlen($characters)-1);
+        $codx .= $characters[$index];
+    }
 
     try{
         $sql = $conn->prepare("INSERT INTO m_jabatan SET 
@@ -15,7 +23,7 @@ if($op == "tambah"){
                                      id_kelas = :id_kelas,
                                      nama = :nama,
                                      des = :des");
-        $stmt = $sql->execute([':codx' => $id_kelas, ':id_kelas' => $id_kelas,':nama' => $nama, ':des' => $des]);
+        $stmt = $sql->execute([':codx' => $codx, ':id_kelas' => $id_kelas,':nama' => $nama, ':des' => $des]);
     } catch(PDOException $e){
         echo $e->getMessage();
     }

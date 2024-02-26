@@ -3,6 +3,7 @@ include("../../config.php");
 $response = [];
 if (isset($_POST['id'])){
     $query = "UPDATE m_jabatan SET 
+        id_kelas='".$_POST['id_kelas']."',
 	    nama='".$_POST['nama']."',
 		des='".$_POST['des']."'
 	    WHERE id = ".$_POST['id'];

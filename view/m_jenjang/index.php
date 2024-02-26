@@ -57,7 +57,7 @@ include '../header.php';
                                 <?php
                                 $count = 1;
 
-                                $sql = $conn->prepare("SELECT m_jabatan.id, m_jabatan.nama, m_jabatan.des, m_kelas.nama AS nama_kelas, m_kelas.id AS id_kelas FROM m_jabatan INNER JOIN m_kelas ON m_jabatan.id_kelas = m_kelas.codx ORDER BY m_jabatan.id DESC");
+                                $sql = $conn->prepare("SELECT m_jabatan.id, m_jabatan.nama, m_jabatan.des, m_kelas.nama AS nama_kelas, m_kelas.codx AS id_kelas FROM m_jabatan INNER JOIN m_kelas ON m_jabatan.id_kelas = m_kelas.codx ORDER BY m_jabatan.id DESC");
                                 $sql->execute();
                                 while($data = $sql->fetch()){
                                 ?>
@@ -170,7 +170,7 @@ include '../header.php';
                                         $sql_kelas->execute();
                                         while($data_kelas = $sql_kelas->fetch()){
                                     ?>
-                                    <option value="<?php echo $data_kelas['id']; ?>"><?php echo $data_kelas['nama']; ?></option>
+                                    <option value="<?php echo $data_kelas['codx']; ?>"><?php echo $data_kelas['nama']; ?></option>
                                     <?php } ?>
                                 </select>
                             </div>

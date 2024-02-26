@@ -38,8 +38,20 @@
                 <ul>
                     <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
                     </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="has-arrow">
+                    <div class="parent-icon icon-color-5"><i class="bx bx-data"></i>
+                    </div>
+                    <div class="menu-title">Data</div>
+                </a>
+                <ul>
                     <li> <a href="../m_kelas/"><i class="bx bx-right-arrow-alt"></i>Master Kelas</a>
                     </li>
+                    <li> <a href="../m_jenjang/"><i class="bx bx-right-arrow-alt"></i>Master Jenjang</a>
+                    </li>
+
                 </ul>
             </li>
             <li class="menu-label">Others</li>
