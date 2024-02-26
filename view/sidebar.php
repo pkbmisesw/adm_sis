@@ -38,6 +38,8 @@
                 <ul>
                     <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
                     </li>
+                    <li> <a href="../m_kelas/"><i class="bx bx-right-arrow-alt"></i>Master Kelas</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-label">Others</li>
