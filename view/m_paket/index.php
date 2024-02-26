@@ -7,8 +7,8 @@ if(!(isset($_SESSION['email']))){
     header("Location: ../../");
 }
 
-$master = "Kelas";
-$dba = "kelas";
+$master = "Paket Soal";
+$dba = "paket";
 $ket = "";
 $ketnama = "Silahkan mengisi nama";
 ?>
@@ -47,39 +47,51 @@ include '../header.php';
                                 <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>Jenjang</th>
                                     <th>Nama</th>
                                     <th>Des</th>
+                                    <th>Jumlah Soal</th>
                                     <th>Aksi</th>
+                                    <th>Hapus All</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <?php
                                 $count = 1;
 
-                                $sql = $conn->prepare("SELECT * FROM m_kelas ORDER BY ID DESC");
+                                $sql = $conn->prepare("SELECT m_paket.id, m_paket.codx, m_paket.nama, m_paket.des, m_jabatan.nama as nama_jabatan FROM m_paket INNER JOIN m_jabatan ON m_paket.id_jabatan = m_jabatan.codx ORDER BY m_paket.id DESC");
                                 $sql->execute();
-                                while($data_kelas = $sql->fetch()){
+                                while($data = $sql->fetch()){
                                 ?>
                                 <tr>
                                     <td><?php echo $count; ?></td>
-                                    <td><?php echo $data_kelas['nama']; ?></td>
-                                    <td><?php echo $data_kelas['des']; ?></td>
-                                    <td><button data-id="<?= $data_kelas['id'] ?>" data-nama="<?= $data_kelas['nama'] ?>"
-                                                data-des="<?= $data_kelas['des'] ?>"
+                                    <td><?php echo $data['nama_jabatan']; ?></td>
+                                    <td><?php echo $data['nama']; ?></td>
+                                    <td><?php echo $data['des']; ?></td>
+                                    <td></td>
+                                    <td>
+                                        <a class="btn btn-light-primary p-1"
+                                           href="soal?pid=<?php echo $data['codx']; ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye text-primary"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
+                                        <button data-id="<?= $data['id'] ?>" data-nama="<?= $data['nama'] ?>"
+                                                data-des="<?= $data['des'] ?>"
                                                 type="button" class="btn btn-light-warning p-1 icon-color-4 btn_update"
                                                 data-bs-toggle="modal"><i class="bx bx-pencil"></i></button>
                                         <a class="btn btn-light-danger p-1"
                                            onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"
-                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data_kelas['id']; ?>"><i class="bx bx-x"></i></a></td>
+                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data['id']; ?>"><i class="bx bx-x"></i></a>
+                                    </td>
                                 </tr>
                                 <?php $count++; } ?>
                                 </tbody>
                                 <tfoot>
                                 <tr>
                                     <th>No</th>
+                                    <th>Jenjang</th>
                                     <th>Nama</th>
                                     <th>Des</th>
+                                    <th>Jumlah Soal</th>
                                     <th>Aksi</th>
+                                    <th>Hapus All</th>
                                 </tr>
                                 </tfoot>
                             </table>
@@ -110,6 +122,19 @@ include '../header.php';
                     <div class="text-center mb-4">
                     </div>
                     <div class="row">
+                        <div class="mb-3">
+                            <label for="example1" class="form-label">Kelas : </label>
+                            <select class="form-select" name="id_jabatan">
+                                <?php
+                                $sql_jabatan = $conn->prepare("SELECT * FROM m_jabatan ORDER BY ID DESC");
+                                $sql_jabatan->execute();
+                                while($data_jabatan = $sql_jabatan->fetch()){
+                                    ?>
+                                    <option value="<?php echo $data_jabatan['codx']; ?>"><?php echo $data_jabatan['nama']; ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+
                         <div class="mb-3">
                             <label for="example1" class="form-label">Nama : </label>
                             <input type="text" class="form-control"
@@ -146,6 +171,7 @@ include '../header.php';
                     <div class="row">
                         <form id="form-edit-transaksi-masuk">
                         <input type="hidden" id="id_edit" name="id" />
+
                                 <div class="mb-3">
                                     <label for="example1" class="form-label">Nama : </label>
                                     <input type="text" class="form-control" id="nama_edit"
@@ -188,7 +214,10 @@ include '../footer.php';
         //Modal Edit
         $(document).on('click', '.btn_update', function () {
             console.log("Masuk");
+            const id_kelas = $(this).attr('data-id_kelas');
+
             $("#id_edit").val($(this).attr('data-id'));
+            $(`#kelas_edit option[value=${id_kelas}]`).prop('selected', true)
             $("#nama_edit").val($(this).attr('data-nama'));
             $("#des_edit").val($(this).attr('data-des'));
             $('#edit').modal('show');
