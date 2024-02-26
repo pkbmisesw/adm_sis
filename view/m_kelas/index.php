@@ -7,8 +7,8 @@ if(!(isset($_SESSION['email']))){
     header("Location: ../../");
 }
 
-$master = "Users";
-$dba = "user";
+$master = "Kelas";
+$dba = "kelas";
 $ket = "";
 $ketnama = "Silahkan mengisi nama";
 ?>
@@ -47,13 +47,8 @@ include '../header.php';
                                 <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nik</th>
                                     <th>Nama</th>
-                                    <th>Level ID</th>
-                                    <th>Email</th>
-                                    <th>Status Aktif</th>
-                                    <th>Hp</th>
-                                    <th>Ktp</th>
+                                    <th>Des</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
@@ -61,43 +56,29 @@ include '../header.php';
                                 <?php
                                 $count = 1;
 
-                                $sql = $conn->prepare("SELECT * FROM m_user ORDER BY ID DESC");
+                                $sql = $conn->prepare("SELECT * FROM m_kelas ORDER BY ID DESC");
                                 $sql->execute();
-                                while($data_user = $sql->fetch()){
+                                while($data_kelas = $sql->fetch()){
                                 ?>
                                 <tr>
                                     <td><?php echo $count; ?></td>
-                                    <td><?php echo $data_user['nik']; ?></td>
-                                    <td><?php echo $data_user['nama']; ?></td>
-                                    <td><?php echo $data_user['level_id']; ?></td>
-                                    <td><?php echo $data_user['email']; ?></td>
-                                    <td><?php echo $data_user['status_aktif']; ?></td>
-                                    <td><?php echo $data_user['hp']; ?></td>
-                                    <td><a href="../../images/<?php echo $data_user['ktp']; ?>">Lihat</a></td>
-                                    <td><button data-id="<?= $data_user['id'] ?>" data-nik="<?= $data_user['nik'] ?>"
-                                                data-nama="<?= $data_user['nama'] ?>"
-                                                data-level_id="<?= $data_user['level_id'] ?>"
-                                                data-email="<?= $data_user['email'] ?>"
-                                                data-status_aktif="<?= $data_user['status_aktif'] ?>"
-                                                data-hp="<?= $data_user['hp'] ?>" data-ktp="<?= $data_user['ktp'] ?>"
+                                    <td><?php echo $data_kelas['nama']; ?></td>
+                                    <td><?php echo $data_kelas['des']; ?></td>
+                                    <td><button data-id="<?= $data_kelas['id'] ?>" data-nama="<?= $data_kelas['nama'] ?>"
+                                                data-des="<?= $data_kelas['des'] ?>"
                                                 type="button" class="btn btn-light-warning p-1 icon-color-4 btn_update"
                                                 data-bs-toggle="modal">✎</button>
                                         <a class="btn btn-light-danger p-1"
                                            onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"
-                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data_user['id']; ?>">❌</a></td>
+                                           href="../../controller/<?php echo $dba; ?>_controller.php?op=hapus&id=<?php echo $data_kelas['id']; ?>">❌</a></td>
                                 </tr>
                                 <?php $count++; } ?>
                                 </tbody>
                                 <tfoot>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nik</th>
                                     <th>Nama</th>
-                                    <th>Level ID</th>
-                                    <th>Email</th>
-                                    <th>Status Aktif</th>
-                                    <th>Hp</th>
-                                    <th>Ktp</th>
+                                    <th>Des</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </tfoot>
@@ -130,46 +111,15 @@ include '../header.php';
                     </div>
                     <div class="row">
                         <div class="mb-3">
-                            <label for="example1" class="form-label">Nik : </label>
-                            <input type="text" class="form-control"
-                                   name="nik" required/>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="example2" class="form-label">Nama :</label>
+                            <label for="example1" class="form-label">Nama : </label>
                             <input type="text" class="form-control"
                                    name="nama" required/>
                         </div>
 
                         <div class="mb-3">
-                            <label for="example3" class="form-label">Level Id :</label>
+                            <label for="example2" class="form-label">Des :</label>
                             <input type="text" class="form-control"
-                                   name="level_id" required/>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <label for="example3" class="form-label">Email : </label>
-                            <input type="email" class="form-control"
-                                   name="email" required/>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="example3" class="form-label">Password : </label>
-                            <input type="password" class="form-control"
-                                   name="password" required/>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="example2" class="form-label">Status Aktif
-                                :</label>
-                            <input type="text" class="form-control"
-                                   name="status_aktif" required/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="example2" class="form-label">HP :</label>
-                            <input type="text" class="form-control"
-                                   name="hp" required/>
+                                   name="des" required/>
                         </div>
                     </div>
                 </div>
@@ -197,40 +147,15 @@ include '../header.php';
                         <form id="form-edit-transaksi-masuk">
                         <input type="hidden" id="id_edit" name="id" />
                                 <div class="mb-3">
-                                    <label for="example1" class="form-label">Nik : </label>
-                                    <input type="text" class="form-control" id="nik_edit"
-                                           name="nik" />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="example2" class="form-label">Nama :</label>
+                                    <label for="example1" class="form-label">Nama : </label>
                                     <input type="text" class="form-control" id="nama_edit"
                                            name="nama" />
                                 </div>
 
-                            <div class="mb-3">
-                                <label for="example3" class="form-label">Level_id :</label>
-                                <input type="text" class="form-control" id="level_id_edit"
-                                       name="level_id" />
-                            </div>
-
-
-                            <div class="mb-3">
-                                <label for="example3" class="form-label">Email : </label>
-                                <input type="email" class="form-control" id="email_edit"
-                                       name="email" />
-                            </div>
-
                                 <div class="mb-3">
-                                    <label for="example2" class="form-label">Status_aktif
-                                        :</label>
-                                    <input type="text" class="form-control"
-                                           id="status_aktif_edit" name="status_aktif" />
-                                </div>
-                                <div class="mb-3">
-                                    <label for="example2" class="form-label">HP :</label>
-                                    <input type="text" class="form-control" id="hp_edit"
-                                           name="hp" />
+                                    <label for="example2" class="form-label">Des :</label>
+                                    <input type="text" class="form-control" id="des_edit"
+                                           name="des" />
                                 </div>
                         </form>
                     </div>
@@ -264,13 +189,8 @@ include '../footer.php';
         $(document).on('click', '.btn_update', function () {
             console.log("Masuk");
             $("#id_edit").val($(this).attr('data-id'));
-            $("#nik_edit").val($(this).attr('data-nik'));
             $("#nama_edit").val($(this).attr('data-nama'));
-            $("#level_id_edit").val($(this).attr('data-level_id'));
-            $("#email_edit").val($(this).attr('data-email'));
-            $("#status_aktif_edit").val($(this).attr('data-status_aktif'));
-            $("#hp_edit").val($(this).attr('data-hp'));
-            $("#ktp_edit").val($(this).attr('data-ktp'));
+            $("#des_edit").val($(this).attr('data-des'));
             $('#edit').modal('show');
         });
 
