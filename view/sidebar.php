@@ -22,7 +22,7 @@
                     <div class="menu-title">Dashboard</div>
                 </a>
                 <ul>
-                    <li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
+                    <li> <a href=""><i class="bx bx-right-arrow-alt"></i>Analytics</a>
                     </li>
                     <li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Sales</a>
                     </li>
@@ -38,22 +38,6 @@
                 <ul>
                     <li> <a href="../m_users/"><i class="bx bx-right-arrow-alt"></i>Master User</a>
                     </li>
-                    <li> <a href="../m_kelas/"><i class="bx bx-right-arrow-alt"></i>Master Kelas</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;" class="has-arrow">
-                    <div class="parent-icon icon-color-5"><i class="bx bx-data"></i>
-                    </div>
-                    <div class="menu-title">Data</div>
-                </a>
-                <ul>
-                    <li> <a href="../m_kelas/"><i class="bx bx-right-arrow-alt"></i>Master Kelas</a>
-                    </li>
-                    <li> <a href="../m_jenjang/"><i class="bx bx-right-arrow-alt"></i>Master Jenjang</a>
-                    </li>
-
                 </ul>
             </li>
             <li>
