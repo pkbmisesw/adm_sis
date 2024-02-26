@@ -49,6 +49,9 @@
                     </li>
                     <li> <a href="../m_jenjang/"><i class="bx bx-right-arrow-alt"></i>Master Jenjang</a>
                     </li>
+                    <li> <a href="../m_paket/"><i class="bx bx-right-arrow-alt"></i>Master Paket</a>
+                    </li>
+
 
                 </ul>
             </li>
