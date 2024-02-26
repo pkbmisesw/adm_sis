@@ -51,24 +51,14 @@ include 'head.php';
                                     <img src="assets/images/logo-icon.png" width="80" alt="">
                                     <h3 class="mt-4 font-weight-bold">Welcome Back</h3>
                                 </div>
-                                <div class="">
-                                    <div class="d-grid">
-                                        <a class="btn my-4 shadow-sm btn-white" href="javascript:;"> <span class="d-flex justify-content-center align-items-center">
-											<img class="me-2" src="assets/images/icons/search.svg" width="16" alt="Image Description">
-											<span>Sign in with Google</span>
-												</span>
-                                        </a> <a href="javascript:;" class="btn btn-facebook"><i class="bx bxl-facebook"></i>Sign in with Facebook</a>
-                                    </div>
-                                    <div class="login-separater text-center mb-4"> <span>OR SIGN IN WITH EMAIL</span>
-                                        <hr>
-                                    </div>
+                                <div class="mt-xl-5">
                                     <?php if($status == 1){ ?>
                                     <div class="alert alert-danger border-0 bg-danger alert-dismissible fade show">
                                         <div class="text-white">Incorrect username or password!</div>
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                     <?php } ?>
-                                    <div class="form-body">
+                                    <div class="form-body mt-xl-5">
                                         <form class="row g-3" action="" method="POST">
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Email Address</label>
